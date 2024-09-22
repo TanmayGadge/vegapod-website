@@ -1,17 +1,19 @@
+import { Spotlight } from "./ui/spotlight";
+import { SparklesCore } from "./ui/sparkles";
+
 export default function Page() {
-  let links = [
-    { name: "about", href: "/about" },
-    { name: "contacts", href: "/contacts" },
-    { name: "crowd_funding", href: "/crowd" },
-    { name: "gallery", href: "/gallery" },
-    { name: "partners", href: "/partner" },
-    { name: "sponsors", href: "/sponsors" },
-    { name: "team-intro", href: "/team-intro" },
-  ];
   return (
     <>
-      <div className="flex justify-center h-screen items-center text-2xl">
-        <p>This is the home page</p>
+      <div className="flex-col text-center content-center h-screen items-center text-2xl  ">
+        <div className="container flex-col gap-y-2.5 justify-center items-centerh-28">
+          <h1 className="club-title text-6xl inline-block">
+            Vegapod Hyperloop
+          </h1>
+          <br/>
+          <p className="inline-block">accelerating the future</p>
+        </div>
+        {/* <Spotlight className={"club-title"} fill={'white'}/> */}
+        {/* <SparklesCore background={'transparent'} className={'sparkles h-screen fixed -z-1 top-0 left-0 right-0'} particleDensity={6} /> */}
       </div>
     </>
   );

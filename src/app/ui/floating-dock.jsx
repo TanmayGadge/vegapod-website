@@ -4,7 +4,7 @@
  * Mobile navbar is better positioned at bottom right.
  **/
 'use client';
-import { cn } from "../lib/utils";
+import { cn } from "@/app/lib/utils";
 import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import { AnimatePresence, motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Link from "next/link";
@@ -15,8 +15,9 @@ export const FloatingDock = ({
   desktopClassName,
   mobileClassName
 }) => {
+   
   return (
-  <div className="fixed w-screen flex justify-center items-end  h-24">
+  <div className="fixed top-3/4 w-screen flex gap-4 justify-center items-end  h-24">
     <FloatingDockDesktop items={items} className={desktopClassName} />
     <FloatingDockMobile items={items} className={mobileClassName} />
   </div>);
