@@ -1,20 +1,60 @@
-import { Spotlight } from "./ui/spotlight";
-import { SparklesCore } from "./ui/sparkles";
+"use client";
+
+// import { Spotlight } from "./ui/spotlight";
+// import { SparklesCore } from "./ui/sparkles";
+// import { AuroraBackground } from "./ui/aurora-background";
+import { LampContainer } from "./ui/lamp-effect";
+import { FloatingDock } from "./ui/floating-dock";
+import TextPlugin from "gsap/TextPlugin";
+import gsap from "gsap";
+import { useEffect, useRef } from "react";
+import SplitType from "split-type";
 
 export default function Page() {
+  let links = [
+    { title: "Home", href: "/" },
+    { title: "About", href: "/about" },
+    { title: "Contacts", href: "/contacts" },
+    { title: "Crowd Funding", href: "/crowd-funding" },
+    { title: "Gallery", href: "/gallery" },
+    { title: "Partners", href: "/partner" },
+    { title: "Sponsors", href: "/sponsors" },
+    { title: "Team Intro", href: "/team-intro" },
+  ];
+
+  // gsap.registerPlugin(TextPlugin);
+  // const headingRef = useRef(null);
+
+  // useEffect(() => {
+  //   // if(headingRef.current){
+  //   //   headingRef.current.innerHTML = 'Accelarating the future';
+  //   // }
+
+  //   const animText = new SplitType(headingRef.current, {
+  //     types: "words, chars",
+  //   });
+
+  //   gsap.to(animText.chars, {
+  //     text: {
+  //       value: "Vegapod Hyperloop",
+  //     },
+  //     duration: 2,
+  //   });
+  // }, [headingRef.current]);
+
   return (
     <>
-      <div className="flex-col text-center content-center h-screen items-center text-2xl  ">
+      <LampContainer className={""}>
         <div className="container flex-col gap-y-2.5 justify-center items-centerh-28">
-          <h1 className="club-title text-6xl inline-block">
-            Vegapod Hyperloop
+          <h1
+            className="club-title text-6xl inline-block relative bottom-10"
+            // ref={headingRef}
+          >
+            Accelarating the Future
           </h1>
-          <br/>
-          <p className="inline-block">accelerating the future</p>
         </div>
-        {/* <Spotlight className={"club-title"} fill={'white'}/> */}
-        {/* <SparklesCore background={'transparent'} className={'sparkles h-screen fixed -z-1 top-0 left-0 right-0'} particleDensity={6} /> */}
-      </div>
+      </LampContainer>
+      <FloatingDock items={links} />
     </>
   );
 }

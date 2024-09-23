@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { inter } from "./ui/fonts";
 import { FloatingDock } from "./ui/floating-dock";
+import '../../public/home-icon.svg';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

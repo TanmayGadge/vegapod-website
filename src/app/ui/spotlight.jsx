@@ -1,5 +1,5 @@
 import React from "react";
-import { cn } from "@/app/lib/utils";
+import { cn } from "@/lib/utils";
 
 export const Spotlight = ({
   className,
