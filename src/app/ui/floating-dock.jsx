@@ -17,7 +17,7 @@ export const FloatingDock = ({
 }) => {
    
   return (
-  <div className="fixed top-3/4 w-screen flex gap-4 justify-center items-end  h-24">
+  <div className="fixed top-3/4 left-1/3 md:left-0 w-screen flex gap-4 justify-center items-end  h-24">
     <FloatingDockDesktop items={items} className={desktopClassName} />
     <FloatingDockMobile items={items} className={mobileClassName} />
   </div>);

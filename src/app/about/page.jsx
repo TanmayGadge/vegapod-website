@@ -1,11 +1,10 @@
-// import { inter } from "../ui/fonts";
-
 export default function Page() {
   return (
-    <div className="flex justify-center h-screen items-center text-2xl">
-      <p className="">
-        This is the about page
-      </p>
-    </div>
+    <>
+      <div className="flex justify-center h-screen items-center text-2xl">
+        <p className="">This is the about page</p>
+      </div>
+      <div className="h-screen bg-white"></div>
+    </>
   );
 }

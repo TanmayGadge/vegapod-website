@@ -1,14 +1,10 @@
 "use client";
 
-// import { Spotlight } from "./ui/spotlight";
-// import { SparklesCore } from "./ui/sparkles";
-// import { AuroraBackground } from "./ui/aurora-background";
 import { LampContainer } from "./ui/lamp-effect";
 import { FloatingDock } from "./ui/floating-dock";
-import TextPlugin from "gsap/TextPlugin";
-import gsap from "gsap";
-import { useEffect, useRef } from "react";
-import SplitType from "split-type";
+import { HeroParallax, ProductCard } from "./ui/hero-parallax";
+import Image from "next/image";
+import { urbanist, poppins } from "./ui/fonts";
 
 export default function Page() {
   let links = [
@@ -22,39 +18,33 @@ export default function Page() {
     { title: "Team Intro", href: "/team-intro" },
   ];
 
-  // gsap.registerPlugin(TextPlugin);
-  // const headingRef = useRef(null);
+  let products = [
+    { title: "title-1", link: "link-1", thumbnail: "/@/public/image-1.jpg" },
+    { title: "title-2", link: "link-2", thumbnail: "/@/public/image-1.jpg" },
+    { title: "title-3", link: "link-3", thumbnail: "/@/public/image-1.jpg" },
+    { title: "title-4", link: "link-3", thumbnail: "/@/public/image-1.jpg" },
+    { title: "title-5", link: "link-3", thumbnail: "/@/public/image-1.jpg" },
+    { title: "title-6", link: "link-3", thumbnail: "/@/public/image-1.jpg" },
+  ];
 
-  // useEffect(() => {
-  //   // if(headingRef.current){
-  //   //   headingRef.current.innerHTML = 'Accelarating the future';
-  //   // }
-
-  //   const animText = new SplitType(headingRef.current, {
-  //     types: "words, chars",
-  //   });
-
-  //   gsap.to(animText.chars, {
-  //     text: {
-  //       value: "Vegapod Hyperloop",
-  //     },
-  //     duration: 2,
-  //   });
-  // }, [headingRef.current]);
 
   return (
     <>
       <LampContainer className={""}>
         <div className="container flex-col gap-y-2.5 justify-center items-centerh-28">
           <h1
-            className="club-title text-6xl inline-block relative bottom-10"
-            // ref={headingRef}
+            className={`club-title text-8xl inline-block relative bottom-10 ${urbanist.className}`}
           >
-            Accelarating the Future
+            Vegapod Hyperloop
           </h1>
         </div>
       </LampContainer>
-      <FloatingDock items={links} />
+
+      <HeroParallax products={products} />
+      <ProductCard product={products[0]}/>
+      
+
+      {/* <FloatingDock items={links} /> */}
     </>
   );
 }

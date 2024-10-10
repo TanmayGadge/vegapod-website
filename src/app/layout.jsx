@@ -1,19 +1,7 @@
-import localFont from "next/font/local";
 import "./globals.css";
-import { inter } from "./ui/fonts";
-import { FloatingDock } from "./ui/floating-dock";
-import '../../public/home-icon.svg';
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import { urbanist } from "./ui/fonts";
+import Link from "next/link";
+import styles from "@/ui/navbar.module.css";
 
 export const metadata = {
   title: "Vegapod Hyperloop",
@@ -34,9 +22,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.className} antialiased`}
+        className={`${urbanist.className} antialiased`}
       >
-        <FloatingDock items={links} />
+        <nav className={styles.navbar}>
+          {links.map((link, index) => {
+            return (
+              <div className={styles.pageLink}>
+                <Link className={`hover:underline underline-offset-4 ${urbanist.className}`} href={link.href}>{link.title}</Link>
+              </div>
+            );
+          })}
+        </nav>
         {children}
       </body>
     </html>
