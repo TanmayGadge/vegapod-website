@@ -7,7 +7,7 @@ export default function NavBar({links}) {
   >
     {links.map((link, index) => {
       return (
-        <div className={styles.pageLink}>
+        <div className={styles.pageLink} key={index}>
           <Link className="hover:underline underline-offset-4" href={link.href}>
             {link.title}
           </Link>
