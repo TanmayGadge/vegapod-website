@@ -57,16 +57,17 @@ const Timeline = () => {
   ];
 
   return (
-    <section className="">
+    <section className="mb-16">
       <h1 className="w-fit mx-auto text-primary-900 font-bold text-5xl m-16 p-2 selection:text-light-100 selection:bg-primary-900
       ">
         Expore Our Progress
       </h1>
-
-      <Achievement data={achievements[0]} year={2024} />
-      <Achievement data={achievements[1]} year={2023} />
-      <Achievement data={achievements[2]} year={2022} />
-      <Achievement data={achievements[3]} year={2019} />
+      {
+        achievements.map((data, index) => (
+          <Achievement key={index} data={data} year={2024} index={index} total={achievements.length} />
+        ))
+      }
+      
       
     </section>
   );
