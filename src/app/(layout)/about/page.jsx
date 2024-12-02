@@ -36,7 +36,7 @@ const page = () => {
           <div className="p-4 my-16 rounded-3xl bg-gray-100">
             <h2 className="text-3xl p-4 ">About Vegapod: </h2>
             <div className="xl:flex text-2xl sm:text-3xl ">
-              <p className="flex text-lg sm:text-xl m-4 text-justify mr-8">
+              <p className="flex text-lg sm:text-xl m-4 mr-8">
                 Vegapod Hyperloop is a student-driven initiative dedicated to
                 advancing hyperloop technology, focusing on developing a
                 sustainable, ultra-fast transportation solution for the future.{" "}
