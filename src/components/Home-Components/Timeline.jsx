@@ -64,7 +64,7 @@ const Timeline = () => {
       </h1>
       {
         achievements.map((data, index) => (
-          <Achievement key={index} data={data} year={2024} index={index} total={achievements.length} />
+          <Achievement key={index} data={data} year={index == achievements.length - 1 ? 2019 : 2024 - index} index={index} total={achievements.length} />
         ))
       }
       
