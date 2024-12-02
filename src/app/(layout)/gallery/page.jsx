@@ -2,20 +2,19 @@
 
 import React from "react";
 import { LayoutGrid } from "@/components/LayoutGrid/LayoutGrid";
-import image from "@/assets/images/EHW-2022/IMG_0400.jpg";
-import image1 from "@/assets/images/image-1.jpg";
-
 import images from "@/app/(layout)/gallery/images";
+import MobileGallery from '@/components/Gallery/MobileGallery'
 
 const page = () => {
-  
+
   return (
     <>
-      <section className="bg-light-100`">
-        <h1 className="text-4xl sm:text-6xl text-center p-16 w-fit mx-auto">
+      <section className="bg-light-100`" >
+        <h1 className="text-7xl sm:text-9xl text-center p-16 w-fit mx-auto">
           Gallery of Innovation
         </h1>
-        <LayoutGrid cards={images} />
+        <LayoutGrid cards={images} className="hidden sm:block"/>
+        <MobileGallery images={images} className="sm:hidden"/>
       </section>
       {/* <section
         className="bg-[url('/image-1.jpg')] h-screen bg-cover relative transition-all"

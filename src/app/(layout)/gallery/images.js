@@ -23,6 +23,13 @@ const images = [
       className: "h-60",
       thumbnail: "/gallery/ehw-2022/IMG_1394.jpg",
     },
+    {
+      id: 5,
+      content: null,
+      className: "h-60",
+      thumbnail: "/gallery/ehw-2022/IMG_1394.jpg",
+    },
+    
   ];
 
 

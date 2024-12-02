@@ -3,6 +3,7 @@ import React, { useState, createContext, useContext } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { X } from "lucide-react";
 
 const hoverContext = createContext();
 
@@ -24,7 +25,7 @@ export const LayoutGrid = ({ cards }) => {
   };
 
   return (
-    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
+    <div className="w-full h-full p-10 hidden sm:grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
@@ -72,6 +73,7 @@ export const LayoutGrid = ({ cards }) => {
 const ImageComponent = ({ card }) => {
   const { setIsHovered, setHoveredID } = useContext(hoverContext);
 
+
   return (
     <Image
       onMouseEnter={() => {
@@ -85,11 +87,14 @@ const ImageComponent = ({ card }) => {
       height={500}
       width={500}
       className={cn(
-        "object-cover object-top absolute inset-0 h-full w-full transition duration-200 "
+        "object-cover object-top absolute inset-0 h-full w-full transition duration-200 cursor-pointer"
       )}
+      id="gallery-image"
       alt="thumbnail"
       layout="intrinsic"
       draggable = "false"
+      
+      
     />
   );
 };
