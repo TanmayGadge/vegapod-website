@@ -18,6 +18,7 @@ import ehw9 from "@/assets/images/EHW-2022/IMG_0400.jpg";
 import ehw10 from "@/assets/images/EHW-2022/IMG_0469.jpg";
 import ehw11 from "@/assets/images/EHW-2022/IMG_1690.jpg";
 import ehw12 from "@/assets/images/EHW-2022/IMG_1723.jpg";
+import outreach from "@/assets/images/EHW-2024/outreach-award.jpg";
 
 const page = () => {
   const timelineData = [
@@ -104,25 +105,25 @@ const page = () => {
           <div className="block space-y-4 lg:space-y-0 lg:grid grid-cols-2 gap-2">
             <Image
               src={ehw9}
-              alt="spaceX pod compitition"
+              alt=""
               height={500}
               className="rounded-2xl "
             />
             <Image
               src={ehw10}
-              alt="spaceX pod compitition"
+              alt=""
               height={500}
               className="rounded-2xl "
             />
             <Image
               src={ehw11}
-              alt="spaceX pod compitition"
+              alt=""
               height={500}
               className="rounded-2xl"
             />
             <Image
               src={ehw12}
-              alt="spaceX pod compitition"
+              alt=""
               height={500}
               className="rounded-2xl"
             />
@@ -156,25 +157,25 @@ const page = () => {
           <div className="block space-y-4 lg:space-y-0 lg:grid grid-cols-2 gap-2">
             <Image
               src={ehw1}
-              alt="spaceX pod compitition"
+              alt=""
               height={500}
               className="rounded-2xl "
             />
             <Image
               src={ehw2}
-              alt="spaceX pod compitition"
+              alt=""
               height={500}
               className="rounded-2xl "
             />
             <Image
               src={ehw3}
-              alt="spaceX pod compitition"
+              alt=""
               height={500}
               className="rounded-2xl"
             />
             <Image
               src={ehw4}
-              alt="spaceX pod compitition"
+              alt=""
               height={500}
               className="rounded-2xl"
             />
@@ -207,30 +208,35 @@ const page = () => {
             &ndash; Implemented a <strong>robust thermal management</strong>{" "}
             system for optimized performance and efficiency.
           </p>
-
+          <Image
+            src={outreach}
+            height={500}
+            alt="Outreach award"
+            className="rounded-2xl w-full"
+          />
           <Image
             src={ehw6}
-            alt="spaceX pod compitition"
+            alt=""
             height={500}
             className="rounded-2xl w-full"
           />
           <div className="grid grid-cols-2 gap-2">
             <Image
               src={ehw7}
-              alt="spaceX pod compitition"
+              alt=""
               height={500}
               className="rounded-2xl "
             />
             <Image
               src={ehw5}
-              alt="spaceX pod compitition "
+              alt=" "
               height={500}
               className="rounded-2xl "
             />
           </div>
             <Image
               src={ehw8}
-              alt="spaceX pod compitition"
+              alt=""
               height={500}
               className="rounded-2xl w-fit"
             />

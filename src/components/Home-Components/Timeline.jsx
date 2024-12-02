@@ -4,7 +4,7 @@ import image1 from "@/assets/images/image-1.jpg";
 import image2 from "@/assets/images/image-2.jpg";
 import image3 from "@/assets/images/image-3.jpg";
 import image4 from "@/assets/images/image-4.jpg";
-import ehwImage from "@/assets/images/ehw-2023.jpg";
+import ehwImage from "@/assets/images/EHW-2023/IMG_5026.png";
 import ehwImage2 from "@/assets/images/ehw-2022.jpeg";
 import spaceX from '@/assets/images/spaceX/spaceX-2019.jpg';
 import Achievement from "./Achievement";
@@ -29,7 +29,7 @@ const Timeline = () => {
       },
       {
         image: image3,
-        date: "Zurich, Switzerland",
+        date: "",
         info: " We proudly won the 2024 Outreach Award for our efforts in promoting Hyperloop technology on the International stage.",
       },
     ],
@@ -58,7 +58,7 @@ const Timeline = () => {
 
   return (
     <section className="">
-      <h1 className="w-fit mx-auto text-primary-900 font-bold text-5xl m-16 p-2 selection:text-light-100 selection:bg-primary-900
+      <h1 className="w-fit mx-auto text-primary-900 font-bold text-5xl m-16 p-4 selection:text-light-100 selection:bg-primary-900
       ">
         Expore Our Progress
       </h1>

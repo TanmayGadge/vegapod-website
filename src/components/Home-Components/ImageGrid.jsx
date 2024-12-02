@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const ImageGrid = () => {
   return (
-    <div className="grid grid-cols-3 grid-rows-2 gap-2 p-4">
+    <div className="hidden md:grid grid-cols-3 grid-rows-2 gap-2 p-4 ">
       <Image
         src={image2}
         layout="responsive"

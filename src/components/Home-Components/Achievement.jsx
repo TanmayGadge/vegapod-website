@@ -4,7 +4,7 @@ import {Card} from "../Card/Card";
 
 const Achievement = ({ data, year }) => {
   return (
-    <div className="w-full flex mx-auto max-w-7xl">
+    <div className="w-full flex mx-auto p-4 max-w-7xl">
       <div className="w-fit p-4 h-full my-auto hidden mr-8 md:block">
         <p className={`text-5xl font-bold ${year == 2019 && "ml-3"} `} >
           {year}

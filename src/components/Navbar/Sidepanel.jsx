@@ -13,7 +13,7 @@ const Sidepanel = ({ pages }) => {
 
   return (
     <>
-      <div className={`lg:hidden rounded-xl`}>
+      <div className="lg:hidden rounded-xl z-[90]">
         <button className="p-2" onClick={toggleSidebar}>
           {!sideOpen ? (
             <svg

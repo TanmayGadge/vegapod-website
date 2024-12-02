@@ -36,15 +36,15 @@ const page = () => {
     <section className="bg-light-100 p-4 ">
       <div className="text-center p-4 max-w-7xl mx-auto">
         <h1 className="sm:text-7xl text-5xl p-4 ">
-          <span className="opacity-[40%]">Meet the team that makes  <br />the</span> magic <span className="opacity-[40%]">happen</span>
+          <span className="opacity-[50%]">Meet the team that makes  <br /></span> the magic <span className="opacity-[50%]">happen</span>
         </h1>
-        <h2 className="text-xl opacity-[50%] p-4">
+        <h2 className="sm:text-xl opacity-[50%] p-2">
           Proud members of Vegapod Hyperloop
         </h2>
       </div>
       <div className="p-4 mt-4 bg-[#F4F3EE] rounded-2xl max-w-7xl mx-auto">
-        <Tabs defaultValue="Leads" className="p-4">
-          <TabsList className="py-4 w-full flex flex-col gap-2 lg:flex-row items-start">
+        <Tabs defaultValue="Leads" className="">
+          <TabsList className="py-4 w-full grid grid-cols-2 sm:flex sm:flex-row items-start gap-4">
             
 
             {teams.map((team, index) => {
