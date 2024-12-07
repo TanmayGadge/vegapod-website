@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
         </div>
         <ImageGrid />
-        {/* <ImageSlides /> */}
+        
       </div>
     </section>
   );
