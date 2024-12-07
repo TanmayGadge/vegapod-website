@@ -46,7 +46,7 @@ const Page = () => {
             Submit
           </button>
         </form> */}
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeq5_lNuXktDu-_19AXEvmFLTAvDwELML8OlFiZebxv7DM-HA/viewform?embedded=true" width="640" height="381" frameborder="0" marginheight="0" marginwidth="0" className="mx-auto">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeq5_lNuXktDu-_19AXEvmFLTAvDwELML8OlFiZebxv7DM-HA/viewform?embedded=true" width="640" height="710" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" className="mx-auto ">Loading…</iframe>
       </div>
     </section>
   );

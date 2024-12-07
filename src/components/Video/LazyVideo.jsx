@@ -29,7 +29,7 @@ const LazyVideo = ({ src }) => {
   }, [src]);
 
   return (
-    <video ref={videoRef} controls autoPlay muted className="mx-auto rounded-2xl w-full">
+    <video ref={videoRef} controls autoPlay muted loop className="mx-auto rounded-2xl w-full">
       Your browser does not support the video tag.
     
 </video>
