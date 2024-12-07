@@ -40,7 +40,7 @@ const Navbar = ({ pages }) => {
           {/* <button className="bg-primary-800 rounded-3xl h-12 text-light-100 px-3">
             <Link href={"/contacts"}>Contact Us</Link>
           </button> */}
-          <ButtonDark text={"Contact Us"} link={'/contacts'} className="hidden"/>
+          <ButtonDark text={"Contact Us"} link={'/contacts'} />
           <div className="w-40"></div>
         </div>
         {/* <Sidebar /> */}

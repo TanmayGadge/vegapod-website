@@ -13,7 +13,7 @@ export const Card = ({ image, date, info }) => {
           className="rounded-3xl"
         />
         <div className="my-4 mx-2">
-          <p className="font-mono text-primary-800 font-bold text-lg">{date}</p>
+          <p className="text-primary-800 font-bold text-lg">{date}</p>
           <p className="">{info}</p>
         </div>
       </div>

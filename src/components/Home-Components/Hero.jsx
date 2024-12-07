@@ -3,7 +3,7 @@ import Link from "next/link";
 import ButtonDark from "../Button/ButtonDark";
 import ButtonLight from "../Button/ButtonLight";
 import ImageGrid from "./ImageGrid";
-import ImageSlides from "./ImageSlides";
+
 
 const Hero = () => {
   

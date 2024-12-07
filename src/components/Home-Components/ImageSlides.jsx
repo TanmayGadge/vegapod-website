@@ -1,100 +1,55 @@
-import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+// import "./styles.css";
 import Image from "next/image";
-import image1 from "@/assets/images/image-1.jpg";
-import image2 from "@/assets/images/image-2.jpg";
-import image3 from "@/assets/images/image-3.jpg";
-import image4 from "@/assets/images/image-4.jpg";
-import image6 from "@/assets/images/image-6.jpg";
-import image7 from "@/assets/images/image-7.jpg";
 
-const ImageSlides = () => {
+import arrowLeft from "@/assets/logo/arrow-left.svg";
+import arrowRight from "@/assets/logo/arrow-right.svg";
 
-    let slideIndex = 1;
-    showSlides(slideIndex);
 
-  function plusSlides(n) {
-    showSlides((slideIndex += n));
-  }
-  function currentSlide(n) {
-    showSlides((slideIndex = n));
-  }
 
-  function showSlides(n) {
-    let i;
-    // let slides = document.getElementsByClassName("slides");
-    // let dots = document.getElementsByClassName("dot");
-
-    if (n > slides.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" bg-[#717171]", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " bg-[#717171]";
-  }
-
-  let active = { backgroundColor: "#717171" };
+export default function Carousel({ slides }) {
+  // const swiperLeft = useRef<HTMLDivElement>(null);
+  // const swiperRight = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="md:hidden">
-      <div className="slideshow-container">
-        <div className="slides fade">
-          <Image src={image1} />
-        </div>
-        <div className="slides fade">
-          <Image src={image2} />
-        </div>
-        <div className="slides fade">
-          <Image src={image3} />
-        </div>
-        <div className="slides fade">
-          <Image src={image4} />
-        </div>
-        <div className="slides fade">
-          <Image src={image6} />
-        </div>
-        <div className="slides fade">
-          <Image src={image7} />
-        </div>
-
-        <a onClick={plusSlides(-1)}></a>
-        <a onClick={plusSlides(1)}></a>
+    <Swiper
+      modules={[EffectCoverflow, Navigation, Pagination]}
+      navigation={{
+        prevEl: ".button-prev",
+        nextEl: ".button-next",
+      }}
+      pagination={{
+        clickable: true,
+      }}
+      speed={1000}
+      slidesPerView={"auto"}
+      centeredSlides
+      effect={"coverflow"}
+      coverflowEffect={{
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      }}
+    >
+      {slides.map((slide, index) => (
+        <SwiperSlide key={index} className="slide-inner">
+          <Image src={slide} alt="" className="rounded-3xl"/>
+        </SwiperSlide>
+      ))} 
+      <div className="absolute top-[50%] w-10 p-2 rounded-lg bg-primary-800 translate-y-[-50%] cursor-pointer z-10 left-3">
+        <Image src={arrowLeft} alt="Left" />
       </div>
-      <div className="text-center space-x-2 space-y-4">
-        <span
-          className="dot cursor-pointer h-[15px] w-[15px] bg-black inline-block rounded-[50%]"
-          onClick={currentSlide(1)}
-        ></span>
-        <span
-          className="dot cursor-pointer h-[15px] w-[15px] bg-black inline-block rounded-[50%]"
-          onClick={currentSlide(2)}
-        ></span>
-        <span
-          className="dot cursor-pointer h-[15px] w-[15px] bg-black inline-block rounded-[50%]"
-          onClick={currentSlide(3)}
-        ></span>
-        <span
-          className="dot cursor-pointer h-[15px] w-[15px] bg-black inline-block rounded-[50%]"
-          onClick={currentSlide(4)}
-        ></span>
-        <span
-          className="dot cursor-pointer h-[15px] w-[15px] bg-black inline-block rounded-[50%]"
-          onClick={currentSlide(5)}
-        ></span>
-        <span
-          className="dot cursor-pointer h-[15px] w-[15px] bg-black inline-block rounded-[50%]"
-          onClick={currentSlide(6)}
-        ></span>
+      <div className="absolute top-[50%] w-10 p-2 rounded-lg bg-primary-300 translate-y-[-50%] cursor-pointer z-10 right-3">
+        <Image src={arrowRight} alt="Right" />
       </div>
-    </div>
+    </Swiper>
   );
-};
-
-export default ImageSlides;
+}
