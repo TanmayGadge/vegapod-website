@@ -13,8 +13,9 @@ const page = () => {
         <h1 className="text-7xl sm:text-9xl text-center p-16 w-fit mx-auto">
           Gallery of Innovation
         </h1>
-        <LayoutGrid cards={images} className="hidden sm:block"/>
-        <MobileGallery images={images} className="sm:hidden"/>
+        {/* <h2 className="text-4xl w-fit">EHW-2022</h2> */}
+        <LayoutGrid cards={images} className=""/>
+        {/* <MobileGallery images={images} className="sm:hidden"/> */}
       </section>
       {/* <section
         className="bg-[url('/image-1.jpg')] h-screen bg-cover relative transition-all"

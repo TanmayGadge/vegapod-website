@@ -70,7 +70,10 @@ module.exports = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		backgroundImage: {
+			custom: "linear-gradient(189deg, rgba(255,255,255,0) 0%, rgba(33,33,33,0.8) 100%)"
+		}
   	}
   },
   plugins: [require("tailwindcss-animate")],
