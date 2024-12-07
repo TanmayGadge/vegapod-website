@@ -246,7 +246,7 @@ const page = () => {
   ];
 
   return (
-    <div className="z-0">
+    <div className="z-0 bg-light-100">
       <Timeline data={timelineData} className="z-0"/>
     </div>
   );

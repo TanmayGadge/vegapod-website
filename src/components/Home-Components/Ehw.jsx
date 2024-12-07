@@ -7,13 +7,13 @@ const Ehw = () => {
   return (
     <div className="bg-primary-800 text-light-100">
       <div className="max-w-7xl mx-auto p-4">
-        <h1 className="text-center fotn-extrabold text-3xl sm:text-5xl p-4 mb-4">
+        <h1 className="text-center text-3xl sm:text-5xl p-10 mb-4">
           European Hyperloop Week
         </h1>
         <Image
           src={trackImage}
           height={400}
-          className="rounded-3xl float-left mx-4 mt-4"
+          className="rounded-3xl sm:float-left mr-4 mt-4"
           alt={"track at EHW"}
         />
         <p className="p-4 text-xl sm:text-2xl text-left sm:text-justify">

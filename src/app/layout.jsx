@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     { title: "Achievements", href: "/achievements", id: 4 },
     { title: "Contacts", href: "/contacts", id: 5 },
     { title: "Gallery", href: "/gallery", id: 6 },
-    { title: "Crowd Funding", href: "/crowd-funding", id: 7 },
+    // { title: "Crowd Funding", href: "/crowd-funding", id: 7 },
     { title: "Sponsors", href: "/sponsors", id: 8 },
   ];
   return (

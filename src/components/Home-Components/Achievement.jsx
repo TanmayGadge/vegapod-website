@@ -6,7 +6,7 @@ const Achievement = ({ data, year, index, total }) => {
 
     <div className="w-full flex mx-auto max-w-7xl">
       <div className=" p-4 h-full my-auto hidden md:block w-60">
-        <p className={`text-5xl font-bold  `} >
+        <p className="text-5xl font-bold " >
 
           {year}
 
@@ -23,7 +23,7 @@ const Achievement = ({ data, year, index, total }) => {
         }
       </div>
       <div className="w-full">
-        <div className="text-3xl block md:hidden">{year}</div>
+        <div className="text-3xl block md:hidden ml-2">{year}</div>
         <div className="w-full grid grid-cols-1 gap-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3 sm:px-16 pt-8 ">
           {data.map((achievement, index) => {
             return (
