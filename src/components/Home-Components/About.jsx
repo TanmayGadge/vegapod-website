@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import image4 from "@/assets/images/image-4.jpg";
 import dynamic from "next/dynamic";
 
 const DynamicVideo = dynamic(() => import("../Video/LazyVideo"), {

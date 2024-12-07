@@ -35,12 +35,12 @@ const images = [
       className: "h-56 ",
       thumbnail: "/gallery/ehw-2022/IMG_1542.jpg",
     },
-    {
-      id: 7,
-      content: 'EHW-2022',
-      className: "h-56 ",
-      thumbnail: "/gallery/ehw-2022/IMG_1544.jpg",
-    },
+    // {
+    //   id: 7,
+    //   content: 'EHW-2022',
+    //   className: "h-56 ",
+    //   thumbnail: "/gallery/ehw-2022/IMG_1544.jpg",
+    // },
     {
       id: 8,
       content: 'EHW-2022',

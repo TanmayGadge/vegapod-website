@@ -1,18 +1,15 @@
 "use client";
-import React, { useState, createContext, useContext } from "react";
+import React, { useState} from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { X } from "lucide-react";
 
-const hoverContext = createContext();
+
 
 export const LayoutGrid = ({ cards }) => {
   const [selected, setSelected] = useState(null);
   const [lastSelected, setLastSelected] = useState(null);
 
-  const [isHovered, setIsHovered] = useState(false);
-  const [hoveredID, setHoveredID] = useState(null);
 
   const handleClick = (card) => {
     setLastSelected(selected);
@@ -25,7 +22,7 @@ export const LayoutGrid = ({ cards }) => {
   };
 
   return (
-    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
+    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4  max-w-7xl mx-auto gap-4 relative ">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
@@ -34,7 +31,7 @@ export const LayoutGrid = ({ cards }) => {
               card.className,
               "relative overflow-hidden",
               selected?.id === card.id
-                ? "rounded-lg cursor-pointer absolute sm:fixed inset-0 h-3/4 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
+                ? "rounded-lg cursor-pointer fixed inset-0 h-3/4 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
                 : lastSelected?.id === card.id
                 ? "z-40 bg-white rounded-xl h-full w-full"
                 : "bg-white rounded-xl h-full w-full"
@@ -42,15 +39,11 @@ export const LayoutGrid = ({ cards }) => {
             layoutId={`card-${card.id}`}
           >
             {selected?.id === card.id && <SelectedCard selected={selected} />}
-            <hoverContext.Provider
-              value={{ isHovered, setIsHovered, hoveredID, setHoveredID }}
-            >
-              <div
-                className={isHovered && hoveredID != card.id ? "grayscale" : ""}
-              >
+            
+              <div>
                 <ImageComponent card={card} />
               </div>
-            </hoverContext.Provider>
+            
           </motion.div>
         </div>
       ))}
@@ -68,26 +61,18 @@ export const LayoutGrid = ({ cards }) => {
 };
 
 const ImageComponent = ({ card }) => {
-  const { setIsHovered, setHoveredID } = useContext(hoverContext);
 
   return (
     <Image
-      onMouseEnter={() => {
-        setHoveredID(card.id);
-        setIsHovered(true);
-      }}
-      onMouseLeave={() => {
-        setIsHovered(false);
-      }}
       src={card.thumbnail}
       height={500}
       width={500}
       className={cn(
-        "object-cover object-top absolute inset-0 h-full w-full transition duration-200 cursor-pointer "
+        `object-cover object-top absolute inset-0 h-full w-full transition duration-200 cursor-pointer `
       )}
       id="gallery-image"
       alt="thumbnail"
-      layout="intrinsic"
+      layout="fixed"
       draggable="false"
     />
   );
