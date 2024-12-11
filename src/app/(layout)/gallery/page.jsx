@@ -14,9 +14,10 @@ const page = () => {
         <h1 className="text-7xl sm:text-9xl text-center p-16 w-fit mx-auto">
           Gallery of Innovation
         </h1>
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7214889403444314112?compact=1" height="600" width="1080" frameborder="0" allowfullscreen="" title="Embedded post" scrolling="no"  className="rounded-xl mx-auto overflow-hidden hidden lg:block"></iframe>
         {/* <h2 className="text-4xl w-fit">EHW-2022</h2> */}
         <LayoutGrid cards={images} className="" />
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7218189254928023553?compact=1" height="550" width="1000" frameborder="0" allowfullscreen="" title="Embedded post" scrolling="no" className="rounded-xl mx-auto overflow-hidden hidden md:bloack"></iframe>
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7218189254928023553?compact=1" height="550" width="1000" frameborder="0" allowfullscreen="" title="Embedded post" scrolling="no" className="rounded-xl mx-auto overflow-hidden hidden lg:block"></iframe>
 
         {/* <MobileGallery images={images} className="sm:hidden"/> */}
       </section>

@@ -4,10 +4,10 @@ import { Timeline } from "@/components/Timeline/Timeline";
 import Image from "next/image";
 import spaceX from "@/assets/images/spaceX/spaceX-compitition.jpg";
 import spaceX2 from "@/assets/images/spaceX/spaceX-pod.jpg";
-import ehw1 from "@/assets/images/EHW-2023/IMG_4989.png";
-import ehw2 from "@/assets/images/EHW-2023/IMG_4999.png";
-import ehw3 from "@/assets/images/EHW-2023/IMG_5024.png";
-import ehw4 from "@/assets/images/EHW-2023/IMG_5045.png";
+import ehw1 from "@/assets/images/EHW-2023/IMG_4989.jpeg";
+import ehw2 from "@/assets/images/EHW-2023/IMG_4999.jpeg";
+import ehw3 from "@/assets/images/EHW-2023/IMG_5024.jpeg";
+import ehw4 from "@/assets/images/EHW-2023/IMG_5045.jpeg";
 
 import ehw5 from "@/assets/images/EHW-2024/IMG_9823.jpg";
 import ehw6 from "@/assets/images/EHW-2024/IMG-20240925-WA0015.jpg";

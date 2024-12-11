@@ -16,6 +16,8 @@ import {
   Business,
   cSuite,
   Mechanical,
+  Sense,
+  Pr
 } from "@/app/(layout)/members/memberData";
 
 import Link from "next/link";
@@ -28,8 +30,9 @@ const page = () => {
     "Mechanical",
     "Levitation",
     "Electrical",
-    "Business",
-    "cSuite",
+
+    "Sense and Control",
+    "Pr and Sponsorship"
   ];
 
   return (
@@ -44,7 +47,7 @@ const page = () => {
       </div>
       <div className="p-4 mt-4 bg-[#F4F3EE] rounded-2xl max-w-7xl mx-auto">
         <Tabs defaultValue="Leads" className="">
-          <TabsList className="py-4 w-full grid grid-cols-2 sm:flex sm:flex-row items-start gap-4">
+          <TabsList className="py-4  grid grid-cols-2 lg:flex items-start gap-4">
             
 
             {teams.map((team, index) => {
@@ -188,6 +191,38 @@ const page = () => {
               })}
             </div>
           </TabsContent>
+          <TabsContent value="Sense and Control">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+              {Sense.map((senseMember) => {
+                return (
+                  <Card
+                    image={senseMember.image}
+                    name={senseMember.name}
+                    role={senseMember.role}
+                    desc={senseMember.description}
+                    linkedIn={senseMember.linkedIn}
+                    key={senseMember.id}
+                  />
+                );
+              })}
+            </div>
+          </TabsContent>
+          <TabsContent value="Pr and Sponsorship">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+              {Pr.map((prMember) => {
+                return (
+                  <Card
+                    image={prMember.image}
+                    name={prMember.name}
+                    role={prMember.role}
+                    desc={prMember.description}
+                    linkedIn={prMember.linkedIn}
+                    key={prMember.id}
+                  />
+                );
+              })}
+            </div>
+          </TabsContent>
           </div>
           
         </Tabs>
@@ -200,12 +235,14 @@ const Card = ({ image, name, role, desc, linkedIn }) => {
   return (
     <>
       <div className="p-4 space-y-2">
-        <Link href={linkedIn || "#"} target="_blank">
+        <Link href={linkedIn || "#"} target={`${linkedIn && "_blank"}`}>
           <Image
             src={image}
-            className="rounded-2xl hover:mix-blend-multiply "
+            className={`rounded-2xl ${linkedIn && "hover:mix-blend-multiply"}`}
             layout="fixed"
-            width={1000}
+            width={500}
+            height={300}
+            alt="Member Photo"
           />
         </Link>
         <h1 className="text-xl font-semibold">{name}</h1>

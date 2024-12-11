@@ -4,7 +4,7 @@ import image1 from "@/assets/images/image-1.jpg";
 import image2 from "@/assets/images/image-2.jpg";
 import image3 from "@/assets/images/image-3.jpg";
 import image4 from "@/assets/images/image-4.jpg";
-import ehwImage from "@/assets/images/EHW-2023/IMG_5026.png";
+import ehwImage from "@/assets/images/EHW-2023/IMG_5026.jpeg";
 import ehwImage2 from "@/assets/images/ehw-2022.jpeg";
 import spaceX from '@/assets/images/spaceX/spaceX-2019.jpg';
 import Achievement from "./Achievement";
