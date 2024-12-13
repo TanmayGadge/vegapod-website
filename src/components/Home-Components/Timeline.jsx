@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import image1 from "@/assets/images/image-1.jpg";
 import image2 from "@/assets/images/image-2.jpg";
 import image3 from "@/assets/images/image-3.jpg";

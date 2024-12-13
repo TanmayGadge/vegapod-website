@@ -16,7 +16,7 @@ const Ehw = () => {
           className="rounded-3xl sm:float-left mr-4 mt-4"
           alt={"track at EHW"}
         />
-        <p className="p-4 text-xl sm:text-2xl text-left sm:text-justify">
+        <p className="p-4 text-xl sm:text-2xl text-left sm:text-justify font-extralight">
           The European Hyperloop Week (EHW) is an essential annual event that
           aims to advance hyperloop technology. This dynamic gathering fosters
           collaboration among students, industry leaders, academia, and

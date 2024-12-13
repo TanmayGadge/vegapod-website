@@ -37,10 +37,7 @@ const Navbar = ({ pages }) => {
           })}
         </div>
         <div className="hidden lg:block">
-          {/* <button className="bg-primary-800 rounded-3xl h-12 text-light-100 px-3">
-            <Link href={"/contacts"}>Contact Us</Link>
-          </button> */}
-          <ButtonDark text={"Contact Us"} link={'/contacts'} />
+          <ButtonDark text={"Contact Us"} link={'/contact'} />
           <div className="w-40"></div>
         </div>
         {/* <Sidebar /> */}
