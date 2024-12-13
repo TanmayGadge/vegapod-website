@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import vegapodLogo from "@/assets/logo/vegapod-logo.png";
@@ -6,11 +8,22 @@ import Sidepanel from "./Sidepanel";
 import ButtonDark from "../Button/ButtonDark";
 
 const Navbar = ({ pages }) => {
+
+  let prevScrollpos = window.scrollY
+
+  window.onscroll = function () {
+    let currentScrollPos = window.scrollY;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-5rem";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
   return (
     <>
-      <nav
-        className='flex flex-row-reverse lg:flex-row justify-around lg:justify-evenly h-20 items-center bg-light-100 fixed top-0 inset-x-0 z-50'
-      >
+      <nav className="flex flex-row-reverse lg:flex-row justify-around lg:justify-evenly h-20 items-center bg-light-100 fixed top-0 inset-x-0 z-50 transition-all duration-700" id="navbar">
         <div className="flex gap-4">
           <Link href="/" className="flex items-center gap-2 p-2">
             <Image
@@ -20,7 +33,8 @@ const Navbar = ({ pages }) => {
               width={50}
             />
             <div className="h-8 w-[1px] bg-primary-900"></div>
-            Vegpod <br/>Hyperloop
+            Vegpod <br />
+            Hyperloop
           </Link>
         </div>
         <div className="hidden lg:flex gap-8 ">
@@ -37,14 +51,14 @@ const Navbar = ({ pages }) => {
           })}
         </div>
         <div className="hidden lg:block">
-          <ButtonDark text={"Contact Us"} link={'/contact'} />
+          <ButtonDark text={"Contact Us"} link={"/contact"} />
           <div className="w-40"></div>
         </div>
         {/* <Sidebar /> */}
-        <Sidepanel pages={pages}/>
+        <Sidepanel pages={pages} />
       </nav>
     </>
   );
 };
 
-export default Navbar; 
+export default Navbar;
