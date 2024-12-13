@@ -1,33 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { Flag } from "lucide-react";
 
 const page = () => {
-  // const sponsorLogos = [
-  //   "Aeron.png",
-  //   "Epitome.webp",
-  //   "Festo.png",
-  //   "Frame 15.png",
-  //   "Analog Devices.png",
-  //   "Frame 19.png",
-  //   "Frame 21.png",
-  //   "Frame 22.png",
-  //   "Frame 23.png",
-  //   "Frame 25.png",
-  //   "Frame 26.png",
-  //   "Frame 28.png",
-  //   "Hilti.png",
-  //   "Infineon.png",
-  //   "JBC.jpg",
-  //   "KR Composites.png",
-  //   // "Ocular 2.png",
-  //   "Prototech.svg",
-  //   "yashi wraplts.svg",
-  // ];
-
+  
   const sponsors = [
     {
       name: "Swiss",
@@ -68,7 +44,7 @@ const page = () => {
     },
     {
       name: "Festo",
-      image: "Festo.png",
+      image: "festo.png",
       url: "https://festo.com/",
       desc: "",
     },
@@ -167,7 +143,7 @@ const page = () => {
           width={500}
           className={"mx-auto w-fit hover:bg-gray-300 rounded-xl"}
         />
-        <div className="relative w-[80vw] h-[40vh]  md:h-[50vh] lg:h-[60vh] xl:h-[90vh] max-w-7xl mx-auto">
+        <div className="relative w-[80vw] h-[40vh] sm:h-[90vh] lg:h-[60vh] xl:h-[90vh] max-w-7xl mx-auto">
           <iframe
             width="900"
             height="500"
