@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
 import vegapodLogo from "@/assets/logo/vegapod-logo.png";
@@ -8,18 +6,6 @@ import Sidepanel from "./Sidepanel";
 import ButtonDark from "../Button/ButtonDark";
 
 const Navbar = ({ pages }) => {
-
-  let prevScrollpos = window.scrollY
-
-  window.onscroll = function () {
-    let currentScrollPos = window.scrollY;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0";
-    } else {
-      document.getElementById("navbar").style.top = "-5rem";
-    }
-    prevScrollpos = currentScrollPos;
-  }
 
   return (
     <>

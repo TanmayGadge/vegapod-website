@@ -37,24 +37,9 @@ const About = () => {
           </p>
         </div>
         <div className="mt-16 relative max-w-7xl mx-auto">
-          {/* <video
-            muted
-            loop
-            autoPlay
-            controls
-            className="-z-1 h-[80vh] w-screen rounded-xl hidden"
-          >
-            <source src="/videos/hyperloop.mp4" />
-            <source src="/_next-video/vegapod-video.mp4" />
-          </video> */}
 
-          <DynamicVideo src="/_next-video/vegapod-video.mp4"  />
+          <DynamicVideo src="/video/vegapod-video.mp4" />
 
-          {/* <p className="absolute text-xl sm:text-5xl mx-auto w-48 sm:w-96 text-center top-10 bg-light-100 text-primary-900 p-4 sm:left-[calc((100%-24rem)/2)] left-[calc((100%-12rem)/2)] ">
-            The future of transportation
-          </p> */}
-
-          
         </div>
       </section>
     </>
