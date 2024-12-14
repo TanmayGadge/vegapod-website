@@ -165,7 +165,7 @@ const page = () => {
             height={500}
             width={500}
             link={"https://www.epitomeindia.com/"}
-            className={"mx-auto w-fit "}
+            className={"mx-auto w-fit hover:bg-gray-300 rounded-xl"}
           />
           <SponsorCard
             image={"/sponsors/Infineon.png"}
@@ -174,7 +174,7 @@ const page = () => {
             height={500}
             width={500}
             link={"https://www.infineon.com/"}
-            className={"mx-auto w-fit "}
+            className={"mx-auto w-fit hover:bg-gray-300 rounded-xl"}
           />
         </div>
 
@@ -191,6 +191,7 @@ const page = () => {
                 link={sponsor.url}
                 height={sponsor.flag && 150}
                 width={sponsor.flag && 150}
+                className={"hover:bg-gray-300 rounded-xl"}
               />
             );
           })}
