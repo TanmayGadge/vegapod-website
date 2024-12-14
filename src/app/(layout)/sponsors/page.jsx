@@ -14,7 +14,7 @@ const page = () => {
     {
       name: "Epitome Components",
       image: "epitome.webp",
-      url: "https://aeronsystems.com/",
+      url: "https://www.epitomeindia.com/",
       desc: "",
     },
     {
