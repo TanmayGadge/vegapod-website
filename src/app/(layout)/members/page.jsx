@@ -26,9 +26,9 @@ const page = () => {
   const teams = [
     "Leads",
     "GUI",
-    "Electronics",
+    // "Electronics",
     "Mechanical",
-    "Levitation",
+    // "Levitation",
     "Electrical",
 
     "Sense and Control",
@@ -95,7 +95,7 @@ const page = () => {
               })}
             </div>
           </TabsContent>
-          <TabsContent value="Electronics">
+          {/* <TabsContent value="Electronics">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-4">
               {Electronics.map((electronicsMember) => {
                 return (
@@ -110,7 +110,7 @@ const page = () => {
                 );
               })}
             </div>
-          </TabsContent>
+          </TabsContent> */}
           <TabsContent value="Mechanical">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-4">
               {Mechanical.map((mechanicalMember) => {

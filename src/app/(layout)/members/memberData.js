@@ -40,24 +40,24 @@ const GUI = [
 ];
 
 const Electronics = [
-  {
-    name: 'Ananthukrishna Vinod',
-    linkedIn: 'https://www.linkedin.com/in/ananthukrishna-vinod-873947242/',
-    subDept: 'Electronics',
-    role: 'Electronic Engineer',
-    description: 'Junior Electronic Engineer at Vegapod Hyperloop, responsible for designing PCBs of different VCUs',
-    image: '/members/Ananthukrishna Vinod.jpg',
-    id:1
-  },
-  {
-    name: 'Samiksha Khot',
-    linkedIn: '',
-    subDept: 'Electronics',
-    role: 'Electronics Engineering',
-    description: 'Electronics Engineer',
-    image: '/members/Samiksha Khot.jpg',
-    id:2
-  },
+  // {
+  //   name: 'Ananthukrishna Vinod',
+  //   linkedIn: 'https://www.linkedin.com/in/ananthukrishna-vinod-873947242/',
+  //   subDept: 'Electronics',
+  //   role: 'Electronic Engineer',
+  //   description: 'Junior Electronic Engineer at Vegapod Hyperloop, responsible for designing PCBs of different VCUs',
+  //   image: '/members/Ananthukrishna Vinod.jpg',
+  //   id:1
+  // },
+  // {
+  //   name: 'Samiksha Khot',
+  //   linkedIn: '',
+  //   subDept: 'Electronics',
+  //   role: 'Electronics Engineering',
+  //   description: 'Electronics Engineer',
+  //   image: '/members/Samiksha Khot.jpg',
+  //   id:2
+  // },
 ];
 
 const Mechanical = [
@@ -259,6 +259,24 @@ const Sense = [
     image: "/members/SWARALI.jpg",
     linkedIn: null,
     id: 1,
+  },
+  {
+    name: 'Ananthukrishna Vinod',
+    linkedIn: 'https://www.linkedin.com/in/ananthukrishna-vinod-873947242/',
+    subDept: 'Electronics',
+    role: 'Electronic Engineer',
+    description: 'Junior Electronic Engineer at Vegapod Hyperloop, responsible for designing PCBs of different VCUs',
+    image: '/members/Ananthukrishna Vinod.jpg',
+    id:9
+  },
+  {
+    name: 'Samiksha Khot',
+    linkedIn: '',
+    subDept: 'Electronics',
+    role: 'Electronics Engineering',
+    description: 'Electronics Engineer',
+    image: '/members/Samiksha Khot.jpg',
+    id:10
   },
 ]
 
