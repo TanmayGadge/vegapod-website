@@ -10,7 +10,6 @@ import {
 import {
   Leads,
   GUI,
-  Electronics,
   Levitation,
   Electrical,
   Business,
@@ -25,14 +24,11 @@ import Link from "next/link";
 const page = () => {
   const teams = [
     "Leads",
-    "GUI",
-    // "Electronics",
     "Mechanical",
-    // "Levitation",
     "Electrical",
-
     "Sense and Control",
-    "Pr and Sponsorship"
+    "GUI",
+    "PR and Sponsorship"
   ];
 
   return (
@@ -95,22 +91,7 @@ const page = () => {
               })}
             </div>
           </TabsContent>
-          {/* <TabsContent value="Electronics">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-4">
-              {Electronics.map((electronicsMember) => {
-                return (
-                  <Card
-                    image={electronicsMember.image}
-                    name={electronicsMember.name}
-                    role={electronicsMember.role}
-                    desc={electronicsMember.description}
-                    linkedIn={electronicsMember.linkedIn}
-                    key={electronicsMember.id}
-                  />
-                );
-              })}
-            </div>
-          </TabsContent> */}
+          
           <TabsContent value="Mechanical">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-4">
               {Mechanical.map((mechanicalMember) => {

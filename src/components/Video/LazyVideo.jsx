@@ -29,7 +29,7 @@ const LazyVideo = ({ src }) => {
   }, [src]);
 
   return (
-    <video ref={videoRef} autoPlay muted loop controls controlsList="nodownload" className="hidden sm:block mx-auto rounded-2xl w-full h-[80vh] object-cover rotate-">
+    <video ref={videoRef} autoPlay muted loop controls controlsList="nodownload" className="hidden sm:block mx-auto rounded-2xl w-full object-cover aspect-video">
       Your browser does not support the video tag.
     
 </video>

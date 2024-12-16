@@ -39,26 +39,7 @@ const GUI = [
   },
 ];
 
-const Electronics = [
-  // {
-  //   name: 'Ananthukrishna Vinod',
-  //   linkedIn: 'https://www.linkedin.com/in/ananthukrishna-vinod-873947242/',
-  //   subDept: 'Electronics',
-  //   role: 'Electronic Engineer',
-  //   description: 'Junior Electronic Engineer at Vegapod Hyperloop, responsible for designing PCBs of different VCUs',
-  //   image: '/members/Ananthukrishna Vinod.jpg',
-  //   id:1
-  // },
-  // {
-  //   name: 'Samiksha Khot',
-  //   linkedIn: '',
-  //   subDept: 'Electronics',
-  //   role: 'Electronics Engineering',
-  //   description: 'Electronics Engineer',
-  //   image: '/members/Samiksha Khot.jpg',
-  //   id:2
-  // },
-];
+
 
 const Mechanical = [
   {
@@ -283,4 +264,4 @@ const Sense = [
 
 
 
-export {Leads, GUI, Electronics, Levitation, Electrical, Business, cSuite, Mechanical, Sense, Pr}
+export {Leads, GUI, Levitation, Electrical, Business, cSuite, Mechanical, Sense, Pr}

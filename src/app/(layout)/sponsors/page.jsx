@@ -3,102 +3,100 @@ import Image from "next/image";
 import Link from "next/link";
 
 const page = () => {
-  
   const sponsors = [
-    {
-      name: "Swiss",
-      image: "Frame 14.svg",
-      url: "https://www.swiss.com/",
-      desc: "",
-    },
+    // {
+    //   name: "Mahle",
+    //   image: "mahle.png",
+    //   url: "https://www.mahle.com/",
+    //   desc: "",
+    //   level: 1,
+    // },
+    // {
+    //   name: "Festo",
+    //   image: "festo.png",
+    //   url: "https://festo.com/",
+    //   desc: "",
+    //   level: 1,
+    // },
+    // {
+    //   name: "Precision",
+    //   image: "Frame 21.png",
+    //   url: "https://precisionwires.in/",
+    //   desc: "",
+    //   level: 1,
+    //   flag: true,
+    // },
     {
       name: "Epitome Components",
       image: "epitome.webp",
       url: "https://www.epitomeindia.com/",
       desc: "",
+      level: 2,
+    },
+    {
+      name: "Freemans",
+      image: "freemans.png",
+      url: "https://www.freemansgroup.com/",
+      desc: "",
+      level: 2,
+    },
+    {
+      name: "TDK",
+      image: "Frame 19.png",
+      url: "https://www.tdk.com/en/index.html/",
+      desc: "",
+      level: 2,
+    },
+
+    {
+      name: "Hilti",
+      image: "Hilti.png",
+      url: "https://www.hilti.in/",
+      desc: "",
+      level: 2,
+    },
+
+    {
+      name: "Bender",
+      image: "Frame 25.png",
+      url: "https://www.bender-in.com/",
+      desc: "",
+      level: 2,
     },
     {
       name: "Aeron",
       image: "Aeron.png",
       url: "https://aeronsystems.com/",
       desc: "",
+      level: 2,
     },
     {
       name: "JBC",
-      image: "JBC.jpg",
+      image: "JBC.png",
       url: "https://www.jbctools.com/",
       desc: "",
-    },
-
-    {
-      name: "Pluss",
-      image: "Frame 15.png",
-      url: "https://www.pluss.co.in/",
-      desc: "",
-    },
-    {
-      name: "Bender",
-      image: "Frame 25.png",
-      url: "https://www.bender-in.com/",
-      desc: "",
-    },
-    {
-      name: "Festo",
-      image: "festo.png",
-      url: "https://festo.com/",
-      desc: "",
-    },
-
-    {
-      name: "Ocular Manufacturing",
-      image: "Ocular 2.png",
-      url: "https://www.ocularmanufacturing.com/",
-      desc: "",
-    },
-    {
-      name: "Hilti",
-      image: "Hilti.png",
-      url: "https://www.hilti.in/",
-      desc: "",
-    },
-    {
-      name: "Infineon",
-      image: "Infineon.png",
-      url: "https://www.infineon.com/",
-      desc: "",
+      level: 2,
     },
     {
       name: "TE Conectivity",
       image: "Frame 26.png",
       url: "https://www.te.com/en/home.html",
       desc: "",
+      level: 2,
     },
     {
-      name: "Prototech ",
-      image: "Prototech.svg",
-      url: "https://prototechsolutions.com/",
+      name: "Analog devices",
+      image: "Analog Devices.png",
+      url: "https://www.analog.com/en/index.html",
       desc: "",
-      flag: true,
-    },
-    {
-      name: "Washi wraplts",
-      image: "yashi wraplts.svg",
-      url: "",
-      desc: "",
-      flag: true,
-    },
-    {
-      name: "Precision",
-      image: "Frame 21.png",
-      url: "https://precisionwires.in/",
-      desc: "",
-      flag: true,
+      level: 2,
     },
     {
       name: "Gatkul Automotives ",
       image: "Frame 22.png",
       url: "https://www.instagram.com/gatkulautomotives/",
       desc: "",
+      level: 2,
     },
     {
       name: "Definative Detailing",
@@ -107,19 +105,98 @@ const page = () => {
       desc: "",
     },
     {
-      name: "KR Composites",
-      image: "KR Composites.png",
-      url: "https://www.krcomposites.com/",
+      name: "Pluss",
+      image: "Frame 15.png",
+      url: "https://www.pluss.co.in/",
       desc: "",
+      level: 2,
     },
+
+    // {
+    //   name: "Ocular Manufacturing",
+    //   image: "Ocular 2.png",
+    //   url: "https://www.ocularmanufacturing.com/",
+    //   desc: "",
+    //   level: 2,
+    // },
   ];
 
   return (
     <section className="bg-light-100">
-      <div className="max-w-7xl p-4 mx-auto space-y-16">
+      <div className="max-w-7xl p-4 mx-auto space-y-8">
         <h1 className="text-5xl w-fit mx-auto p-4">
           A Heartfelt Thank You to Our Sponsors
         </h1>
+        {/* <h2 className="text-4xl text-center">A special thanks to</h2> */}
+        <div className="grid grid-cols-2 gap-4">
+          <SponsorCard
+            image={"/sponsors/Infineon.png"}
+            // name={"Infineon"}
+            desc={""}
+            height={600}
+            width={600}
+            link={"https://www.infineon.com/"}
+            className={"mx-auto w-fit hover:bg-gray-300 rounded-xl"}
+          />
+          <SponsorCard
+            image={"/sponsors/Frame 14.svg"}
+            // name={"Swiss"}
+            desc={""}
+            link={"https://www.swiss.com/"}
+            height={600}
+            width={600}
+            className={"mx-auto w-fit hover:bg-gray-300 rounded-xl"}
+          />
+        </div>
+        <div className="flex justify-evenly h-auto gap-4">
+          <SponsorCard
+            image={"/sponsors/mahle.png"}
+            desc={""}
+            link={"https://www.swiss.com/"}
+            // height={500}
+            // width={500}
+            className={" hover:bg-gray-300 rounded-xl scale-x-[2] "}
+          />
+          <SponsorCard
+            image={"/sponsors/festo.png"}
+            desc={""}
+            link={"https://www.swiss.com/"}
+            className={" hover:bg-gray-300 rounded-xl "}
+          />
+          <SponsorCard
+            image={"/sponsors/precision.png"}
+            desc={""}
+            link={"https://www.swiss.com/"}
+            className={" hover:bg-gray-300 rounded-xl"}
+          />
+        </div>
+        {/* <h2 className="text-center text-5xl">Our Sponsors</h2> */}
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 ">
+          {sponsors.map((sponsor, index) => {
+            return (
+              <SponsorCard
+                key={index}
+                image={`/sponsors/${sponsor.image}`}
+                desc={sponsor.desc}
+                link={sponsor.url}
+                className={`hover:bg-gray-300 rounded-xl `}
+              />
+            );
+          })}
+        </div>{" "}
+        <div className="relative w-[80vw] h-[40vh] sm:h-[90vh] lg:h-[60vh] xl:h-[90vh] max-w-7xl mx-auto">
+          <iframe
+            width="900"
+            // height="500"
+            src="https://www.youtube.com/embed/cGEGoZ8Lpg8?si=ItdPalI4NfO3qDDJ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            className="absolute w-full rounded-xl mx-auto h-full aspect-video"
+          ></iframe>
+        </div>
         <p className="p-4 text-xl sm:text-2xl ">
           We, at Team Vegapod Hyperloop, extend our deepest gratitude to all our
           valued sponsors for their unwavering support and belief in our vision.
@@ -133,69 +210,6 @@ const page = () => {
           generation of engineers and innovators. Thank you for being an
           integral part of our journey!
         </p>
-        <h2 className="text-4xl">A special thanks to</h2>
-        <SponsorCard
-          image={"/sponsors/Frame 14.svg"}
-          // name={"Swiss"}
-          desc={""}
-          link={"https://www.swiss.com/"}
-          height={500}
-          width={500}
-          className={"mx-auto w-fit hover:bg-gray-300 rounded-xl"}
-        />
-        <div className="relative w-[80vw] h-[40vh] sm:h-[90vh] lg:h-[60vh] xl:h-[90vh] max-w-7xl mx-auto">
-          <iframe
-            width="900"
-            height="500"
-            src="https://www.youtube.com/embed/cGEGoZ8Lpg8?si=ItdPalI4NfO3qDDJ"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            className="absolute w-full h-full rounded-xl mx-auto "
-          ></iframe>
-        </div>
-
-        <div className="grid grid-cols-2 gap-4">
-          <SponsorCard
-            image={"/sponsors/epitome.webp"}
-            // name={"epitome"}
-            desc={""}
-            height={500}
-            width={500}
-            link={"https://www.epitomeindia.com/"}
-            className={"mx-auto w-fit hover:bg-gray-300 rounded-xl"}
-          />
-          <SponsorCard
-            image={"/sponsors/Infineon.png"}
-            // name={"Infineon"}
-            desc={""}
-            height={500}
-            width={500}
-            link={"https://www.infineon.com/"}
-            className={"mx-auto w-fit hover:bg-gray-300 rounded-xl"}
-          />
-        </div>
-
-        <h2 className="w-fit mx-auto text-5xl">Our Sponsors</h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-3 ">
-          {sponsors.map((sponsor, index) => {
-            return (
-              <SponsorCard
-                key={index}
-                image={`/sponsors/${sponsor.image}`}
-                name={sponsor.name}
-                desc={sponsor.desc}
-                link={sponsor.url}
-                height={sponsor.flag && 150}
-                width={sponsor.flag && 150}
-                className={"hover:bg-gray-300 rounded-xl"}
-              />
-            );
-          })}
-        </div>
       </div>
     </section>
   );
@@ -204,20 +218,19 @@ const page = () => {
 const SponsorCard = ({ image, name, desc, link, className, height, width }) => {
   return (
     <>
-      <div className={`p-4 space-y-3 ${className} h-fit`}>
+      <div
+        className={`p-4 flex  justify-center items-center space-y-3 ${className} `}
+      >
         <Link href={link} target="_blank">
           <Image
             src={image}
-            className="rounded-2xl object-cover "
+            className=" object-contain h-1/2 mx-auto w-full"
             layout="fixed"
-            width={width || 300}
-            height={height || 300}
+            width={width || 200}
+            height={height || 200}
             alt="sponsor logo"
           />
         </Link>
-        <h1 className={`text-xl font-semibold `}>{name}</h1>
-
-        <p className="font">{desc}</p>
       </div>
     </>
   );
