@@ -47,11 +47,24 @@ const page = () => {
       desc: "",
       level: 2,
     },
-
+    {
+      name: "Sb Electronics",
+      image: "sb electronics.png",
+      url: "https://www.sbelectronics.co.in/",
+      desc: "",
+      level: 2,
+    },
     {
       name: "Hilti",
       image: "Hilti.png",
       url: "https://www.hilti.in/",
+      desc: "",
+      level: 2,
+    },
+    {
+      name: "Traco Power",
+      image: "traco power.svg",
+      url: "https://www.tracopower.com/int",
       desc: "",
       level: 2,
     },
@@ -92,7 +105,7 @@ const page = () => {
       level: 2,
     },
     {
-      name: "Gatkul Automotives ",
+      name: "Gatkul Automotives",
       image: "Frame 22.png",
       url: "https://www.instagram.com/gatkulautomotives/",
       desc: "",
@@ -111,14 +124,6 @@ const page = () => {
       desc: "",
       level: 2,
     },
-
-    // {
-    //   name: "Ocular Manufacturing",
-    //   image: "Ocular 2.png",
-    //   url: "https://www.ocularmanufacturing.com/",
-    //   desc: "",
-    //   level: 2,
-    // },
   ];
 
   return (
@@ -127,59 +132,47 @@ const page = () => {
         <h1 className="text-5xl w-fit mx-auto p-4">
           A Heartfelt Thank You to Our Sponsors
         </h1>
-        {/* <h2 className="text-4xl text-center">A special thanks to</h2> */}
         <div className="grid grid-cols-2 gap-4">
           <SponsorCard
             image={"/sponsors/Infineon.png"}
-            // name={"Infineon"}
-            desc={""}
             height={600}
             width={600}
             link={"https://www.infineon.com/"}
-            className={"mx-auto w-fit hover:bg-gray-300 rounded-xl"}
+            className={"mx-auto w-fit"}
           />
           <SponsorCard
             image={"/sponsors/Frame 14.svg"}
-            // name={"Swiss"}
-            desc={""}
             link={"https://www.swiss.com/"}
             height={600}
             width={600}
-            className={"mx-auto w-fit hover:bg-gray-300 rounded-xl"}
+            className={"mx-auto w-fit "}
           />
         </div>
-        <div className="flex justify-evenly h-auto gap-4">
+        <div className="flex justify-evenly gap-4">
           <SponsorCard
             image={"/sponsors/mahle.png"}
-            desc={""}
             link={"https://www.swiss.com/"}
-            // height={500}
-            // width={500}
-            className={" hover:bg-gray-300 rounded-xl scale-x-[2] "}
-          />
-          <SponsorCard
-            image={"/sponsors/festo.png"}
-            desc={""}
-            link={"https://www.swiss.com/"}
-            className={" hover:bg-gray-300 rounded-xl "}
+            className={"w-[70%] sm:w-auto"}
           />
           <SponsorCard
             image={"/sponsors/precision.png"}
-            desc={""}
-            link={"https://www.swiss.com/"}
-            className={" hover:bg-gray-300 rounded-xl"}
+            link={"https://precisionwires.in/"}
+            className={" hover:bg-gray-300  "}
+            imageStyle={"scale-y-[0.6]"}
+          />
+          <SponsorCard
+            image={"/sponsors/festo.png"}
+            link={"https://festo.com/"}
+            className={""}
           />
         </div>
-        {/* <h2 className="text-center text-5xl">Our Sponsors</h2> */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 ">
           {sponsors.map((sponsor, index) => {
             return (
               <SponsorCard
                 key={index}
                 image={`/sponsors/${sponsor.image}`}
-                desc={sponsor.desc}
                 link={sponsor.url}
-                className={`hover:bg-gray-300 rounded-xl `}
               />
             );
           })}
@@ -215,16 +208,16 @@ const page = () => {
   );
 };
 
-const SponsorCard = ({ image, name, desc, link, className, height, width }) => {
+const SponsorCard = ({ image, link, className, height, width, imageStyle }) => {
   return (
     <>
       <div
-        className={`p-4 flex  justify-center items-center space-y-3 ${className} `}
+        className={`p-4 flex hover:bg-gray-300 rounded-xl justify-center items-center space-y-3 ${className} `}
       >
         <Link href={link} target="_blank">
           <Image
             src={image}
-            className=" object-contain h-1/2 mx-auto w-full"
+            className={`object-contain h-1/2 mx-auto ${imageStyle}`}
             layout="fixed"
             width={width || 200}
             height={height || 200}

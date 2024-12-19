@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import vegapodLogo from "@/assets/logo/vegapod-logo.png";
+import vegapodLogo from "@/assets/logo/vegapod-logo.svg";
 import Image from "next/image";
 import Sidepanel from "./Sidepanel";
 import ButtonDark from "../Button/ButtonDark";
@@ -40,7 +40,6 @@ const Navbar = ({ pages }) => {
           <ButtonDark text={"Contact Us"} link={"/contact"} />
           <div className="w-40"></div>
         </div>
-        {/* <Sidebar /> */}
         <Sidepanel pages={pages} />
       </nav>
     </>
