@@ -2,30 +2,13 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Sponsors - Vegapod Hyperloop",
+  description: "Our sponsors"
+}
+
 const page = () => {
   const sponsors = [
-    // {
-    //   name: "Mahle",
-    //   image: "mahle.png",
-    //   url: "https://www.mahle.com/",
-    //   desc: "",
-    //   level: 1,
-    // },
-    // {
-    //   name: "Festo",
-    //   image: "festo.png",
-    //   url: "https://festo.com/",
-    //   desc: "",
-    //   level: 1,
-    // },
-    // {
-    //   name: "Precision",
-    //   image: "Frame 21.png",
-    //   url: "https://precisionwires.in/",
-    //   desc: "",
-    //   level: 1,
-    //   flag: true,
-    // },
     {
       name: "Epitome Components",
       image: "epitome.webp",
@@ -63,7 +46,7 @@ const page = () => {
     },
     {
       name: "Traco Power",
-      image: "traco power.svg",
+      image: "traco-power.png",
       url: "https://www.tracopower.com/int",
       desc: "",
       level: 2,
@@ -155,10 +138,10 @@ const page = () => {
             className={"w-[70%] sm:w-auto"}
           />
           <SponsorCard
-            image={"/sponsors/precision.png"}
+            image={"/sponsors/precision-wires.png"}
             link={"https://precisionwires.in/"}
             className={" hover:bg-gray-300  "}
-            imageStyle={"scale-y-[0.6]"}
+            // imageStyle={"sm:scale-[2] scale-[3]"}
           />
           <SponsorCard
             image={"/sponsors/festo.png"}

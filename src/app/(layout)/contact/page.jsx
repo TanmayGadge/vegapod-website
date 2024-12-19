@@ -1,5 +1,10 @@
 import React from "react";
 
+export const metadata = {
+  title: "Contacts - Vegapod Hyperloop",
+  description: "Contact us"
+}
+
 const Page = () => {
   return (
     <section className="bg-light-100 p-2">

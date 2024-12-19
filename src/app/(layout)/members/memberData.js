@@ -18,6 +18,14 @@ const Leads = [
     image: '/members/Ahmed Bohra.jpg',
     id: 2
   },
+  {
+    name: "Srushti Aravandekar",
+    role: "Joint Manager",
+    description: "Srushti foresees the team’s non-tech aspects, including sponsorships, design, content creation, logistics, and ﬁnance, while contributing to subsystem monitoring as part of the GUI team.",
+    image: `/members/Srushti Aravandekar.jpeg`,
+    linkedIn: "https://www.linkedin.com/in/srushtiaravandekar?trk=contact-info",
+    id: 3,
+  },
 ];
 
 const GUI = [

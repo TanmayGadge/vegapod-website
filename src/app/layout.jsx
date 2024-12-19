@@ -22,15 +22,15 @@ export default function RootLayout({ children }) {
   ];
   return (
     <html lang="en">
-       <Head>
+       {/* <Head>
         <title>Your Website Title</title>
-        <meta property="og:title" content="Vegapod Hyperloop" />
+        <meta property="og:title" content="vegapod Hyperloop" />
         <meta property="og:description" content="Student club at MIT-WPU" />
         <meta property="og:image" content="/thumbnail.svg" />
         <meta property="og:url" content="https://vegapodhyperloop.in" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-      </Head>
+      </Head> */}
       <body className={`antialiased`}>
         <Navbar pages={pages} />
         <main className="mt-20 ">{children}</main>

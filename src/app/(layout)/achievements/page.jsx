@@ -20,6 +20,7 @@ import ehw11 from "@/assets/images/EHW-2022/IMG_1690.jpg";
 import ehw12 from "@/assets/images/EHW-2022/IMG_1723.jpg";
 import outreach from "@/assets/images/EHW-2024/outreach-award.jpg";
 
+
 const page = () => {
   const timelineData = [
     {
@@ -107,24 +108,28 @@ const page = () => {
               src={ehw9}
               alt=""
               height={500}
+              width={500}
               className="rounded-2xl "
             />
             <Image
-              src={ehw10}
+              src={'/gallery/ehw-2022/IMG_1544.jpg'}
               alt=""
-              height={500}
+              width={500}
+              height={300}
               className="rounded-2xl "
             />
             <Image
-              src={ehw11}
+              src={'/gallery/ehw-2022/IMG_2951.jpg'}
               alt=""
               height={500}
+              width={500}
               className="rounded-2xl"
             />
             <Image
               src={ehw12}
               alt=""
               height={500}
+              width={500}
               className="rounded-2xl"
             />
           </div>  

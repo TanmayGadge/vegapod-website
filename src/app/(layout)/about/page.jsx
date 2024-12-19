@@ -2,6 +2,12 @@ import React from "react";
 import groupImage from "@/assets/images/image-3.jpg";
 import Image from "next/image";
 import { LampDemo } from "@/components/Lamp-Effect/Lamp";
+// import Head from "next/head";
+
+export const metadata = {
+  title: "About - Vegapod Hyperloop",
+  description: "Learn more about the club"
+}
 
 const page = () => {
   return (

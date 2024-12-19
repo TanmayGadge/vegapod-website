@@ -21,6 +21,12 @@ import {
 
 import Link from "next/link";
 
+export const metadata = {
+  title: "Members - Vegapod Hyperloop",
+  description: "Our team members"
+}
+
+
 const page = () => {
   const teams = [
     "Leads",
@@ -188,7 +194,7 @@ const page = () => {
               })}
             </div>
           </TabsContent>
-          <TabsContent value="Pr and Sponsorship">
+          <TabsContent value="PR and Sponsorship">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
               {Pr.map((prMember) => {
                 return (
@@ -215,11 +221,11 @@ const page = () => {
 const Card = ({ image, name, role, desc, linkedIn }) => {
   return (
     <>
-      <div className="p-4 space-y-2">
+      <div className="p-4 space-y-2 ">
         <Link href={linkedIn || "#"} target={`${linkedIn && "_blank"}`}>
           <Image
             src={image}
-            className={`rounded-2xl ${linkedIn && "hover:mix-blend-multiply"}`}
+            className={`rounded-2xl ${linkedIn && "hover:mix-blend-multiply"} object-cover h-1/2`}
             layout="fixed"
             width={500}
             height={300}
