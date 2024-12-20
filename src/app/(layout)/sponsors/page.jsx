@@ -138,10 +138,9 @@ const page = () => {
             className={"w-[70%] sm:w-auto"}
           />
           <SponsorCard
-            image={"/sponsors/precision-wires.png"}
+            image={"/sponsors/precision-2.png"}
             link={"https://precisionwires.in/"}
-            className={" hover:bg-gray-300  "}
-            // imageStyle={"sm:scale-[2] scale-[3]"}
+            imageStyle={"sm:scale-[2] scale-[3]"}
           />
           <SponsorCard
             image={"/sponsors/festo.png"}
