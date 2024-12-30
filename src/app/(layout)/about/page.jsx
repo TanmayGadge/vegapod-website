@@ -6,8 +6,8 @@ import { LampDemo } from "@/components/Lamp-Effect/Lamp";
 
 export const metadata = {
   title: "About - Vegapod Hyperloop",
-  description: "Learn more about the club"
-}
+  description: "Learn more about the club",
+};
 
 const page = () => {
   return (
@@ -17,7 +17,6 @@ const page = () => {
       </section>
       <section className="bg-light-100 ">
         <div className="max-w-7xl p-4 mx-auto ">
-          
           <p className="w-[80%] mt-40 text-left mx-auto text-4xl sm:text-5xl xl:text-7xl  font-bold ">
             <span className="opacity-[35%]">
               At Vegapod Hyperloop, our vision is{" "}
