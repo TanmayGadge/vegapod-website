@@ -10,6 +10,15 @@
         <lastmod>2024-12-30T07:16:29.502Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
+        <video:video>
+            <video:title>Only together we can shine | SWISS</video:title>
+            <video:description>Teamwork makes a dream work: True to this motto, our crew and
+                technicians made a fantasy come true in the middle of the night at Zurich Airport.</video:description>
+            <video:duration>95</video:duration> <!-- in seconds -->
+            <video:publication_date>2021-12-18T07:16:29.502Z</video:publication_date>
+            <video:player_loc>
+                https://youtu.be/cGEGoZ8Lpg8</video:player_loc>
+        </video:video>
     </url>
     <url>
         <loc>https://vegapodhyperloop.in/contact</loc>
@@ -40,11 +49,38 @@
         <lastmod>2024-12-30T07:16:29.502Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
+        <video:video>
+            <video:title>Designs to Manufacturing</video:title>
+            <video:description>Team Vegapod Hyperloop has successfully gotten Vajra to life</video:description>
+            <video:duration>90</video:duration> <!-- in seconds -->
+            <video:publication_date>2024-7-30T07:16:29.502Z</video:publication_date>
+            <video:player_loc>
+                https://www.linkedin.com/feed/update/urn:li:activity:7218189709208911873</video:player_loc>
+        </video:video>
+        <video:video>
+            <video:title>Partnership with swiss</video:title>
+            <video:description>Team Vegapod Hyperloop is thrilled to announce Swiss International
+                Air Lines as our hashtag#Official hashtag#Travel hashtag#Partner for the 2024
+                European Hyperloop Week, which will be held in Zurich, Switzerland, this July.</video:description>
+            <video:duration>89</video:duration> <!-- in seconds -->
+            <video:publication_date>2024-7-30T07:16:29.502Z</video:publication_date>
+            <video:player_loc>
+                https://www.linkedin.com/feed/update/urn:li:activity:7214889687050543106</video:player_loc>
+        </video:video>
     </url>
     <url>
         <loc>https://vegapodhyperloop.in</loc>
         <lastmod>2024-12-30T07:16:29.502Z</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.7</priority>
+        <priority>1.0</priority>
+        <video:video>
+            <video:content_loc>https://vegapodhyperloop.in/videos/vegapod-video.mp4</video:content_loc>
+
+            <video:title>Vegapod Insta Video</video:title>
+            <video:description>Vegapod Hyperloop intro</video:description>
+            <video:duration>44</video:duration> <!-- in seconds -->
+            <video:publication_date>2024-08-20T07:16:29.502Z</video:publication_date>
+
+        </video:video>
     </url>
 </urlset>
