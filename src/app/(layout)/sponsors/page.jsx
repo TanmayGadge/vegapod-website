@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Sponsors - Vegapod Hyperloop",
+  title: "Sponsors",
   description: "Our sponsors"
 }
 

@@ -5,7 +5,7 @@ import { LampDemo } from "@/components/Lamp-Effect/Lamp";
 // import Head from "next/head";
 
 export const metadata = {
-  title: "About - Vegapod Hyperloop",
+  title: "About",
   description: "Learn more about the club",
 };
 

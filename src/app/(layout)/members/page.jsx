@@ -22,7 +22,7 @@ import {
 import Link from "next/link";
 
 export const metadata = {
-  title: "Members - Vegapod Hyperloop",
+  title: "Members",
   description: "Our team members"
 }
 

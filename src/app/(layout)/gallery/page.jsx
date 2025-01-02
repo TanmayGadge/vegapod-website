@@ -4,7 +4,7 @@ import images from "@/app/(layout)/gallery/images";
 
 
 export const metadata = {
-  title: "Gallery - Vegapod Hyperloop",
+  title: "Gallery",
   description: "Take a glance at our journey"
 }
 

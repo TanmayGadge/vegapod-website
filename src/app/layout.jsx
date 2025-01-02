@@ -2,11 +2,19 @@ import Footer from "@/components/Footer/Footer";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Head from "next/head";
-
+import { Twitter } from "lucide-react";
 
 export const metadata = {
-  title: "Vegapod Hyperloop",
-  description: "Student club at MIT-WPU",
+  title: {
+    default: "Vegapod Hyperloop",
+    template: "%s - Vegapod Hyperloop"
+  },
+  description:
+    "Team Vegapod Hyperloop is a dynamic, student-led initiative incubated at MIT-WPU, comprising of 40 talented students from various disciplines, dedicated towards advancing hyperloop technology",
+
+  twitter: {
+    card: "summary_card_image"
+  }
 };
 
 export default function RootLayout({ children }) {
@@ -22,14 +30,16 @@ export default function RootLayout({ children }) {
   ];
   return (
     <html lang="en">
-       <Head>
+      {/* <Head>
         <meta property="og:title" content="vegapod Hyperloop" />
-        <meta property="og:description" content="Student club at MIT-WPU" />
-        <meta property="og:image" content="/thumbnail.svg" />
+        <meta
+          property="og:description"
+          content="Team Vegapod Hyperloop is a dynamic, student-led initiative incubated at MIT-WPU, comprising of 40 talented students from various disciplines, dedicated towards advancing hyperloop technology"
+        />
+        <meta property="og:image" content="@/app/opengraph-image.png" />
         <meta property="og:url" content="https://vegapodhyperloop.in" />
         <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
+      </Head> */}
       <body className={`antialiased`}>
         <Navbar pages={pages} />
         <main className="mt-20 ">{children}</main>
