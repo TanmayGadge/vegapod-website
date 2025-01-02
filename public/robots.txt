@@ -1,6 +1,7 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /crowd-funding
 
 # Host
 Host: https://vegapodhyperloop.in

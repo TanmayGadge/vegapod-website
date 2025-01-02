@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { Timeline } from "@/components/Timeline/Timeline";
 import Image from "next/image";
@@ -15,11 +14,16 @@ import ehw7 from "@/assets/images/EHW-2024/IMG-20240925-WA0018.jpg";
 import ehw8 from "@/assets/images/EHW-2024/IMG-20240925-WA0019.jpg";
 
 import ehw9 from "@/assets/images/EHW-2022/IMG_0400.jpg";
-import ehw10 from "public/gallery/ehw-2022/IMG_0469.jpg";
-import ehw11 from "@/assets/images/EHW-2022/IMG_1690.jpg";
 import ehw12 from "@/assets/images/EHW-2022/IMG_1723.jpg";
 import outreach from "@/assets/images/EHW-2024/outreach-award.jpg";
 
+
+export const metadata = {
+  title: {
+    absolute: "Achievements",
+    description: "Timeline of our achievements"
+  }
+}
 
 const page = () => {
   const timelineData = [
