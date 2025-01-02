@@ -219,7 +219,7 @@ const Sense = [
     subDept: 'Sense',
     role: 'Sense and Control Engineer',
     description: 'PCB Designing and Sensor Interfacing',
-    image: '/members/Anushree Bhasale.jpg',
+    image: '/members/Anushree Bhasale.JPG',
     id:3
   },
   {
