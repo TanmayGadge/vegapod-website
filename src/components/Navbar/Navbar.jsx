@@ -1,28 +1,42 @@
 import React from "react";
 import Link from "next/link";
-import vegapodLogo from "@/assets/logo/vegapod-logo.svg";
+import vegapodLogo from "@/assets/logo/newVegapodLogo.svg";
 import Image from "next/image";
 import Sidepanel from "./Sidepanel";
 import ButtonDark from "../Button/ButtonDark";
 
-const Navbar = ({ pages }) => {
 
+const Navbar = ({ pages }) => {
   return (
     <>
-      <nav className="flex flex-row-reverse lg:flex-row justify-around lg:justify-evenly h-20 items-center bg-light-100 fixed top-0 inset-x-0 z-50 transition-all duration-700" id="navbar">
-        <div className="flex gap-4">
+      <nav
+        className="flex flex-row-reverse lg:flex-row justify-around lg:justify- h-20 items-center bg-light-100 fixed top-0 inset-x-0 z-50 transition-all duration-700"
+        id="navbar"
+      >
+        <div className="flex gap-4 items-center">
+        {/* <Link href={"https://mitwpu.edu.in/"}>
+            <Image
+              src={"/mit-wpu_logo.png"}
+              alt={"Vegapod Logo"}
+              height={200}
+              width={200}
+            />
+          </Link> */}
+          {/* <div className="w-[1px] h-10 bg-slate-500"/> */}
           <Link href="/" className="flex items-center gap-2 p-2">
             <Image
               src={vegapodLogo}
               alt={"Vegapod Logo"}
-              height={50}
-              width={50}
+              height={250}
+              width={250}
             />
-            <div className="h-8 w-[1px] bg-primary-900"></div>
+            {/* <div className="h-8 w-[1px] bg-primary-900"/>
             Vegpod <br />
-            Hyperloop
+            Hyperloop */}
           </Link>
+          
         </div>
+        
         <div className="hidden lg:flex gap-8 ">
           {pages.map((page) => {
             return (

@@ -37,14 +37,6 @@ const GUI = [
     linkedIn: "https://www.linkedin.com/in/tanmay-gadge-377b9625b/",
     id: 1,
   },
-  {
-    name: 'Akhand Pratap Singh',
-    linkedIn: 'https://www.linkedin.com/in/akhand-pratap-singh-66b003330?utm_source=share&utm_campaign=share_via&utm_content=proﬁle&utm_medium=android_app',
-    subDept: 'GUI',
-    role: 'GUI Engineer',
-    description: 'Developing skills in Web development',
-    image: '/members/Akhand Pratap Singh.jpg'
-  },
 ];
 
 

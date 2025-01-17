@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Card from '@/components/Card/MemberCard';
 
 import {
   Tabs,
@@ -218,26 +218,6 @@ const page = () => {
   );
 };
 
-const Card = ({ image, name, role, desc, linkedIn }) => {
-  return (
-    <>
-      <div className="p-4 space-y-2 ">
-        <Link href={linkedIn || "#"} target={`${linkedIn && "_blank"}`}>
-          <Image
-            src={image}
-            className={`rounded-2xl ${linkedIn && "hover:mix-blend-multiply"} object-cover h-1/2`}
-            layout="fixed"
-            width={500}
-            height={300}
-            alt="Member Photo"
-          />
-        </Link>
-        <h1 className="text-xl font-semibold">{name}</h1>
-        <p className="font-medium">{role}</p>
-        <p className="font-light">{desc}</p>
-      </div>
-    </>
-  );
-};
+
 
 export default page;

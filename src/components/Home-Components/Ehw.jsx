@@ -37,7 +37,7 @@ const Ehw = () => {
           target="_blank"
           className="underline underline-offset-4 ml-4"
         >
-          Learn More
+          EHW official website
         </Link>
       </div>
     </div>
