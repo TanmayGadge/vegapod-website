@@ -11,7 +11,7 @@ const Hero = () => {
     <section className=" flex justify-center bg-light-100  p-4">
       <div className="p-4 w-full xl:flex gap-4 max-w-7xl">
         <div className="space-y-8 p-4 ">
-          <h1 className=" text-primary-900 text-left text-5xl  sm:text-7xl font-bold selection:text-light-100 selection:bg-primary-900  ">
+          <h1 className=" text-primary-800 text-left text-5xl  sm:text-7xl font-bold selection:text-light-100 selection:bg-primary-900  ">
             Building the future <br /> of high-speed <span className="hidden sm:block">transportation</span> <span className="sm:hidden">transport</span>
           </h1>
 
