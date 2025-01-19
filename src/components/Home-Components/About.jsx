@@ -12,7 +12,7 @@ const About = () => {
       <section className=" bg-primary-800 text-light-100  p-4 py-32">
         <div className="max-w-7xl font-extralight selection:bg-light-100 selection:text-primary-800 space-y-8 mx-auto">
           <h2 className="text-5xl h flex items-end">Breaking Barriers</h2>
-          <p className="text-xl sm:text-2xl text-justify p-[0.5rem]">
+          <p className="text-xl sm:text-2xl p-[0.5rem]">
             <span className="float-left text-6xl pr-2">V</span>ision challenges
             conformity. Conformity creates conventions. Conventions build
             barriers that prevent a better future. But when many people who
