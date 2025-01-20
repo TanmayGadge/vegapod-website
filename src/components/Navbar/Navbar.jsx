@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import Link from "next/link";
 import vegapodLogo from "@/assets/logo/newVegapodLogo.svg";
@@ -7,10 +9,13 @@ import ButtonDark from "../Button/ButtonDark";
 
 
 const Navbar = ({ pages }) => {
+
+  
+
   return (
     <>
       <nav
-        className="flex flex-row-reverse lg:flex-row justify-around lg:justify- h-20 items-center bg-light-100 fixed top-0 inset-x-0 z-50 transition-all duration-700"
+        className={`flex flex-row-reverse lg:flex-row justify-around lg:justify- h-20 items-center bg-light-100 fixed top-0 inset-x-0  transition-all duration-700 z-50`}
         id="navbar"
       >
         <div className="flex gap-4 items-center">
