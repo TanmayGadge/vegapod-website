@@ -1,9 +1,11 @@
-'use client'
+"use client";
 import Footer from "@/components/Footer/Footer";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Head from "next/head";
 import { useState } from "react";
+import Mhale from "@/components/Home-Components/Mhale";
+import { cubicBezier } from "framer-motion";
 
 // export const metadata = {
 //   title: {
@@ -29,10 +31,14 @@ export default function RootLayout({ children }) {
     // { title: "Crowd Funding", href: "/crowd-funding", id: 7 },
     { title: "Sponsors", href: "/sponsors", id: 8 },
   ];
-    const [isRevealed, setIsRevealed] = useState(localStorage.getItem("mode") === 'dev' ? false : true);
-    const [render, setRender] = useState(localStorage.getItem("mode"));
+  const [isRevealed, setIsRevealed] = useState(
+    localStorage.getItem("mode") === "dev" ? false : true
+  );
+  const [renderCur, setRenderCur] = useState(true);
+  const [renderCont, setRenderCont] = useState(false);
+
   return (
-    <html lang="en">     
+    <html lang="en">
       <Head>
         {/* Basic Meta Tags */}
         <title>Vegapod Hyperloop</title>
@@ -53,7 +59,7 @@ export default function RootLayout({ children }) {
           property="og:image"
           content="https://vegapodhyperloop.in/opengraph-image.png"
         />
-  
+
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://vegapodhyperloop.in" />
@@ -68,8 +74,55 @@ export default function RootLayout({ children }) {
         />
       </Head>
       <body className={`antialiased`}>
-      {render === 'dev' && (
-        <div
+        {renderCont ? (
+          <div className="fixed top-0 h-screen w-screen">
+            {renderCur &&
+             <div className="absolute z-40 top-0 h-screen w-screen flex " onClick={()=>{
+                setIsRevealed(true);
+                setTimeout(()=>{
+                  setRenderCur(false)
+                }, 3000)
+             }}>
+                <div className={`w-1/2  bg-cover h-full  ${isRevealed? "translate-x-[-100%]": ""} transition-transform`} 
+                style={{
+                  transitionDuration: '3000ms',
+                  backgroundImage: "url('/curtain-1.jpeg')",
+                  transitionTimingFunction: cubicBezier(0.95, 0.05, 0.795, 0.035)
+                  
+                  
+                  // transitionDelay:
+                }}
+                >
+
+                </div>
+                <div className={`w-1/2 bg-cover  h-full ${isRevealed? "translate-x-[100%]": ""} transition-transform `} 
+                style={{
+                  transitionDuration: '3000ms',
+                  backgroundImage: "url('/curtain-2.jpeg')",
+                  transitionTimingFunction: cubicBezier(0.95, 0.05, 0.795, 0.035)
+                }}
+                >
+
+                </div>
+              </div>}
+
+            <div className="absolute z-30 h-screen w-screen top-0 bg-red-400" onClick={()=>{
+              setRenderCont(false)              
+            }}>
+              <Mhale />
+            </div>
+          </div>
+        ) : <Navbar pages={pages} />}
+
+        <main className="mt-20 ">{children}</main>
+        <Footer pages={pages} />
+      </body>
+    </html>
+  );
+}
+
+{
+  /* <div
           className={`fixed top-0 z-[999] w-full ${!isRevealed && "bg-white/5 backdrop-blur-[100px]"} pointer-events-auto transition-all h-screen `}
           style={{
             transitionDuration: "3000ms"
@@ -82,18 +135,23 @@ export default function RootLayout({ children }) {
           }}
 
          
-        />
-      )
-      }
-      {
-        isRevealed &&  
-        <Navbar pages={pages} />
+        /> */
+}
 
-      }
+{
+  /* <div class="curtain" >
+            <div class="curtain__wrapper">
+              <input type="checkbox" defaultChecked/>
 
-        <main className="mt-20 ">{children}</main>
-        <Footer pages={pages} />
-      </body>
-    </html>
-  );
+              <div class="curtain__panel curtain__panel--left"></div>
+
+              <div class="curtain__prize">
+                {isRevealed && <Navbar pages={pages} />}
+                <main className="mt-20 ">{children}</main>
+                <Footer pages={pages} />
+              </div>
+
+              <div class="curtain__panel curtain__panel--right"></div>
+            </div>
+          </div> */
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 
+
 const DynamicVideo = dynamic(() => import("../Video/LazyVideo"), {
   ssr: false,
   loading: () => <div>Loading...</div>,
@@ -37,11 +38,11 @@ const About = () => {
           </p>
         </div>
         <div className="mt-16 relative max-w-7xl mx-auto">
-
-          <DynamicVideo src="/video/vegapod-video.mp4" />
-
+          {/* <DynamicVideo src="/video/vegapod-video.mp4" /> */}
         </div>
       </section>
+
+      
     </>
   );
 };

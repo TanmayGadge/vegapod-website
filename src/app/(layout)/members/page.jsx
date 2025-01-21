@@ -73,7 +73,7 @@ const page = () => {
                     image={lead.image}
                     name={lead.name}
                     role={lead.role}
-                    desc={lead.description}
+                    // desc={lead.description}
                     linkedIn={lead.linkedIn}
                     key={lead.id}
                   />
@@ -88,8 +88,8 @@ const page = () => {
                   <Card
                     image={guiMember.image}
                     name={guiMember.name}
-                    role={guiMember.role}
-                    desc={guiMember.description}
+                    // role={guiMember.role}
+                    // desc={guiMember.description}
                     linkedIn={guiMember.linkedIn}
                     key={guiMember.id}
                   />
@@ -105,9 +105,9 @@ const page = () => {
                   <Card
                     image={mechanicalMember.image}
                     name={mechanicalMember.name}
-                    role={mechanicalMember.role}
-                    desc={mechanicalMember.description}
-                    linkedIn={mechanicalMember.linkedIn}
+                    // role={mechanicalMember.role}
+                    // desc={mechanicalMember.description}
+                    // linkedIn={mechanicalMember.linkedIn}
                     key={mechanicalMember.id}
                   />
                 );
@@ -121,9 +121,9 @@ const page = () => {
                   <Card
                     image={levitationMember.image}
                     name={levitationMember.name}
-                    role={levitationMember.role}
-                    desc={levitationMember.description}
-                    linkedIn={levitationMember.linkedIn}
+                    // role={levitationMember.role}
+                    // desc={levitationMember.description}
+                    // linkedIn={levitationMember.linkedIn}
                     key={levitationMember.id}
                   />
                 );
@@ -137,9 +137,9 @@ const page = () => {
                   <Card
                     image={electricalMember.image}
                     name={electricalMember.name}
-                    role={electricalMember.role}
-                    desc={electricalMember.description}
-                    linkedIn={electricalMember.linkedIn}
+                    // role={electricalMember.role}
+                    // desc={electricalMember.description}
+                    // linkedIn={electricalMember.linkedIn}
                     key={electricalMember.id}
                   />
                 );
@@ -169,9 +169,9 @@ const page = () => {
                   <Card
                     image={cSuiteMember.image}
                     name={cSuiteMember.name}
-                    role={cSuiteMember.role}
-                    desc={cSuiteMember.description}
-                    linkedIn={cSuiteMember.linkedIn}
+                    // role={cSuiteMember.role}
+                    // desc={cSuiteMember.description}
+                    // linkedIn={cSuiteMember.linkedIn}
                     key={cSuiteMember.id}
                   />
                 );
@@ -185,9 +185,9 @@ const page = () => {
                   <Card
                     image={senseMember.image}
                     name={senseMember.name}
-                    role={senseMember.role}
-                    desc={senseMember.description}
-                    linkedIn={senseMember.linkedIn}
+                    // role={senseMember.role}
+                    // desc={senseMember.description}
+                    // linkedIn={senseMember.linkedIn}
                     key={senseMember.id}
                   />
                 );
@@ -201,9 +201,9 @@ const page = () => {
                   <Card
                     image={prMember.image}
                     name={prMember.name}
-                    role={prMember.role}
-                    desc={prMember.description}
-                    linkedIn={prMember.linkedIn}
+                    // role={prMember.role}
+                    // desc={prMember.description}
+                    // linkedIn={prMember.linkedIn}
                     key={prMember.id}
                   />
                 );
