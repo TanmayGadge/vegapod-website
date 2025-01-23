@@ -1,24 +1,23 @@
-"use client";
 import Footer from "@/components/Footer/Footer";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Head from "next/head";
-import { useState } from "react";
-import Mhale from "@/components/Home-Components/Mhale";
-import { cubicBezier } from "framer-motion";
+// import { useState } from "react";
+// import Mhale from "@/components/Home-Components/Mhale";
 
-// export const metadata = {
-//   title: {
-//     default: "Vegapod Hyperloop",
-//     template: "%s - Vegapod Hyperloop",
-//   },
-//   description:
-//     "Team Vegapod Hyperloop is a dynamic, student-led initiative incubated at MIT-WPU, comprising of 40 talented students from various disciplines, dedicated towards advancing hyperloop technology",
 
-//   twitter: {
-//     card: "summary_card_image",
-//   },
-// };
+export const metadata = {
+  title: {
+    default: "Vegapod Hyperloop",
+    template: "%s - Vegapod Hyperloop",
+  },
+  description:
+    "Team Vegapod Hyperloop is a dynamic, student-led initiative incubated at MIT-WPU, comprising of 40 talented students from various disciplines, dedicated towards advancing hyperloop technology. We craft sub-scale hyperloop prototypes, incorporating cutting-edge technologies such as levitation, vacuum systems, contactless propulsion, regenerative braking, power electronics, and cooling systems.",
+
+  twitter: {
+    card: "summary_card_image",
+  },
+};
 
 export default function RootLayout({ children }) {
   const pages = [
@@ -31,11 +30,11 @@ export default function RootLayout({ children }) {
     // { title: "Crowd Funding", href: "/crowd-funding", id: 7 },
     { title: "Sponsors", href: "/sponsors", id: 8 },
   ];
-  const [isRevealed, setIsRevealed] = useState(
-    localStorage.getItem("mode") === "dev" ? false : true
-  );
-  const [renderCur, setRenderCur] = useState(true);
-  const [renderCont, setRenderCont] = useState(false);
+  // const [isRevealed, setIsRevealed] = useState(
+  //   localStorage.getItem("mode") === "dev" ? false : true
+  // );
+  // const [renderCur, setRenderCur] = useState(true);
+  // const [renderCont, setRenderCont] = useState(true);
 
   return (
     <html lang="en">
@@ -74,7 +73,7 @@ export default function RootLayout({ children }) {
         />
       </Head>
       <body className={`antialiased`}>
-        {renderCont ? (
+        {/* {renderCont ? (
           <div className="fixed top-0 h-screen w-screen">
             {renderCur &&
              <div className="absolute z-40 top-0 h-screen w-screen flex " onClick={()=>{
@@ -112,46 +111,12 @@ export default function RootLayout({ children }) {
               <Mhale />
             </div>
           </div>
-        ) : <Navbar pages={pages} />}
+        ) : <Navbar pages={pages} />} */}
 
+        <Navbar pages={pages} />
         <main className="mt-20 ">{children}</main>
         <Footer pages={pages} />
       </body>
     </html>
   );
-}
-
-{
-  /* <div
-          className={`fixed top-0 z-[999] w-full ${!isRevealed && "bg-white/5 backdrop-blur-[100px]"} pointer-events-auto transition-all h-screen `}
-          style={{
-            transitionDuration: "3000ms"
-          }}
-          onClick={()=>{
-            setIsRevealed(true);
-            setTimeout(()=>{
-              setRender(false)
-            }, 3000)
-          }}
-
-         
-        /> */
-}
-
-{
-  /* <div class="curtain" >
-            <div class="curtain__wrapper">
-              <input type="checkbox" defaultChecked/>
-
-              <div class="curtain__panel curtain__panel--left"></div>
-
-              <div class="curtain__prize">
-                {isRevealed && <Navbar pages={pages} />}
-                <main className="mt-20 ">{children}</main>
-                <Footer pages={pages} />
-              </div>
-
-              <div class="curtain__panel curtain__panel--right"></div>
-            </div>
-          </div> */
 }
