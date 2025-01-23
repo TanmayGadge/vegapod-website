@@ -134,7 +134,7 @@ const page = () => {
         <div className="flex justify-evenly gap-4">
           <SponsorCard
             image={"/sponsors/mahle.png"}
-            link={"https://www.mahle.com/"}
+            link={"https://www.mahle.com"}
             className={"w-[70%] sm:w-auto"}
           />
           <SponsorCard
