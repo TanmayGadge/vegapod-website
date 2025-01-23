@@ -12,7 +12,7 @@ const Leads = [
   },
   {
     name: "Ashish Jadhav",
-    role: "Vice-Captain / Electrical Lead",
+    role: "Vice-Captain / Technical Lead",
     description: "",
     image: "/members/Ashish.jpg",
     linkedIn: "",
@@ -86,12 +86,20 @@ const GUI = [
     id: 1,
   },
   {
+    name: "Srushti Aravandekar",
+    role: "Joint Manager",
+    description: "Srushti foresees the team’s non-tech aspects, including sponsorships, design, content creation, logistics, and ﬁnance, while contributing to subsystem monitoring as part of the GUI team.",
+    image: `/members/Srushti.jpg`,
+    linkedIn: "https://www.linkedin.com/in/srushtiaravandekar?trk=contact-info",
+    id: 2,
+  },
+  {
     name: "Tanmay Gadge",
     role: "GUI Engineer",
     description: "Crafts Robust UI for the pod",
     image: "/members/Tanmay.jpg",
     linkedIn: "https://www.linkedin.com/in/tanmay-gadge-377b9625b/",
-    id: 2,
+    id: 3,
   },
 ];
 
@@ -134,15 +142,15 @@ const Mechanical = [
   //   image: '/members/Ameya.jpg',
   //   id:4
   // },
-  {
-    name: 'Vaibhav Singh',
-    linkedIn: 'www.linkedin.com/in/vaibhav-singh-072303250',
-    subDept: 'Mechanical',
-    role: 'Traction Engineer',
-    description: 'I am here in the team to built a proulsion system for the pod without any contact using Linear Motors.',
-    image: '/members/Vaibhav.jpg',
-    id:5
-  },
+  // {
+  //   name: 'Vaibhav Singh',
+  //   linkedIn: 'www.linkedin.com/in/vaibhav-singh-072303250',
+  //   subDept: 'Mechanical',
+  //   role: 'Traction Engineer',
+  //   description: 'I am here in the team to built a proulsion system for the pod without any contact using Linear Motors.',
+  //   image: '/members/Vaibhav.jpg',
+  //   id:5
+  // },
   {
     name: 'Aryan Sanjay Desai',
     linkedIn: '',
