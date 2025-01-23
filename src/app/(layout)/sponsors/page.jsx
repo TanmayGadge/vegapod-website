@@ -133,7 +133,7 @@ const page = () => {
         </div>
         <div className="flex justify-evenly gap-4">
           <SponsorCard
-            image={"/sponsors/mahle.png"}
+            image={"/sponsors/mahle.svg"}
             link={"https://www.mahle.com"}
             className={"w-[70%] sm:w-auto"}
           />
