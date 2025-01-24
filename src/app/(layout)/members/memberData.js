@@ -6,7 +6,7 @@ const Leads = [
     name: "Hamza Tamboowala",
     role: "Team Captian ",
     description: "",
-    image: "/members/Hamza.jpg",
+    image: "/members/Hamza.JPG",
     linkedIn: "",
     id: 5,
   },
@@ -14,14 +14,14 @@ const Leads = [
     name: "Ashish Jadhav",
     role: "Vice-Captain / Technical Lead",
     description: "",
-    image: "/members/Ashish.jpg",
+    image: "/members/Ashish.JPG",
     linkedIn: "",
     id: 4,
   },
   {   
     name: "Shravani Shinde",
     role: "Manager",
-    image: "/members/Shravani.jpg",
+    image: "/members/Shravani.JPG",
     description: "",
     id: 6
   }, 
@@ -29,7 +29,7 @@ const Leads = [
     name: "Srushti Aravandekar",
     role: "Joint Manager",
     description: "Srushti foresees the team’s non-tech aspects, including sponsorships, design, content creation, logistics, and ﬁnance, while contributing to subsystem monitoring as part of the GUI team.",
-    image: `/members/Srushti.jpg`,
+    image: `/members/Srushti.JPG`,
     linkedIn: "https://www.linkedin.com/in/srushtiaravandekar?trk=contact-info",
     id: 3,
   }, 
@@ -37,7 +37,7 @@ const Leads = [
     name: "Shubham Singh",
     role: "Sense & Control Lead",
     description: "I head the Sense & Control department in Vegapod. Working on the embedded systems in our Hyperloop prototype.",
-    image: "/members/Shubham.jpg",
+    image: "/members/Shubham.JPG",
     linkedIn: "https://www.linkedin.com/in/shubham-singh-285962201?utm_source=share&utm_campaign=share_via&utm_content=proï¬le&utm_medium=android_app",
     id: 1,
   },
@@ -47,28 +47,28 @@ const Leads = [
     subDept: 'Mechanical',
     role: 'Mechanical Lead',
     description: "I design, test, manufacture and ensure our pod doesn't turn into a very expensive rollercoaster. Also, I try to keep bolts and team together.",
-    image: '/members/Ahmed.jpg',
+    image: '/members/Ahmed.JPG',
     id: 2
   },
   {
     name: "Atharva Arbat",
     role: "GUI Lead",
     description: "Crafts Robust UI for the pod",
-    image: "/members/Arbat.jpg",
+    image: "/members/Arbat.JPG",
     linkedIn: "",
     id: 7,
   },
   {   
     name: "Shreya Phadtare",
     role: "Marketing Lead",
-    image: "/members/Shreya.jpg",
+    image: "/members/Shreya.JPG",
     description: "",
     id: 6
   },
   {   
     name: "Prasanna Sagwekar",
     role: "Thermal Lead",
-    image: "/members/Prasanna.jpg",
+    image: "/members/Prasanna.JPG",
     description: "",
     id: 8
   },
@@ -81,7 +81,7 @@ const GUI = [
     name: "Atharva Arbat",
     role: "GUI Lead",
     description: "Crafts Robust UI for the pod",
-    image: "/members/Arbat.jpg",
+    image: "/members/Arbat.JPG",
     linkedIn: "",
     id: 1,
   },
@@ -89,7 +89,7 @@ const GUI = [
     name: "Srushti Aravandekar",
     role: "Joint Manager",
     description: "Srushti foresees the team’s non-tech aspects, including sponsorships, design, content creation, logistics, and ﬁnance, while contributing to subsystem monitoring as part of the GUI team.",
-    image: `/members/Srushti.jpg`,
+    image: `/members/Srushti.JPG`,
     linkedIn: "https://www.linkedin.com/in/srushtiaravandekar?trk=contact-info",
     id: 2,
   },
@@ -97,7 +97,7 @@ const GUI = [
     name: "Tanmay Gadge",
     role: "GUI Engineer",
     description: "Crafts Robust UI for the pod",
-    image: "/members/Tanmay.jpg",
+    image: "/members/Tanmay.JPG",
     linkedIn: "https://www.linkedin.com/in/tanmay-gadge-377b9625b/",
     id: 3,
   },
@@ -112,7 +112,7 @@ const Mechanical = [
     subDept: 'Mechanical',
     role: 'Mechanical Lead',
     description: "I design, test, manufacture and ensure our pod doesn't turn into a very expensive rollercoaster. Also, I try to keep bolts and team together.",
-    image: '/members/Ahmed.jpg',
+    image: '/members/Ahmed.JPG',
     id:1
   },
   {
@@ -121,7 +121,7 @@ const Mechanical = [
     subDept: 'Thermal engineer',
     role: 'Thermal engineer',
     description: 'Cooling the required components',
-    image: '/members/Prasanna.jpg',
+    image: '/members/Prasanna.JPG',
     id:2
   },
   {
@@ -130,7 +130,7 @@ const Mechanical = [
     subDept: 'Mechanical',
     role: 'Thermal Engineer',
     description: 'Cooling the components in the pod that gets heated up during the working of pod and are required cooling',
-    image: '/members/Varad.jpg',
+    image: '/members/Varad.JPG',
     id: 3
   },
   // {
@@ -139,7 +139,7 @@ const Mechanical = [
   //   subDept: 'Mechanical',
   //   role: 'Track and Structural Engineer',
   //   description: 'Design, Analyze and optimise the track',
-  //   image: '/members/Ameya.jpg',
+  //   image: '/members/Ameya.JPG',
   //   id:4
   // },
   // {
@@ -148,7 +148,7 @@ const Mechanical = [
   //   subDept: 'Mechanical',
   //   role: 'Traction Engineer',
   //   description: 'I am here in the team to built a proulsion system for the pod without any contact using Linear Motors.',
-  //   image: '/members/Vaibhav.jpg',
+  //   image: '/members/Vaibhav.JPG',
   //   id:5
   // },
   {
@@ -157,13 +157,13 @@ const Mechanical = [
     subDept: 'Mechanical',
     role: 'Engineer',
     description: 'Chassis design',
-    image: '/members/Aryan.jpg',
+    image: '/members/Aryan.JPG',
     id:6
   },
   {
     name: "Shreang Prasad",
     id: 7,
-    image: "/members/Shreang.jpg",
+    image: "/members/Shreang.JPG",
   },
  
 ];
@@ -175,7 +175,7 @@ const Electrical = [
     name: "Ashish Jadhav",
     role: "Vice-Captain / Electrical Lead",
     description: "",
-    image: "/members/Ashish.jpg",
+    image: "/members/Ashish.JPG",
     linkedIn: "",
     id: 3,
   },
@@ -185,7 +185,7 @@ const Electrical = [
     subDept: 'Electrical',
     role: 'Electrical Engineer',
     description: 'As an electrical engineer, I enthusiastically work towards making a robust and safe electrical system with a working BMS, inverters and LPUs.',
-    image: '/members/Samiha.jpg',
+    image: '/members/Samiha.JPG',
     id:1
   },
   {
@@ -194,12 +194,12 @@ const Electrical = [
     subDept: 'Electrical',
     role: 'Electrical engineer',
     description: "look after the Electrical Subsystem, that is the Batteries , Inverters and Propulsion subsystem , which are required for Pod's powering up and running of the Pod.",
-    image: '/members/Ayush.jpg',
+    image: '/members/Ayush.JPG',
     id:2
   },
   {
     name: 'Atharva Bhandagi',
-    image: "/members/Atharva Bhandagi.jpg",
+    image: "/members/Atharva Bhandagi.JPG",
     id: 4,
   },
  
@@ -228,7 +228,7 @@ const Pr = [
   {   
     name: "Shravani Shinde",
     role: "Manager",
-    image: "/members/Shravani.jpg",
+    image: "/members/Shravani.JPG",
     description: "",
     id: 4
   }, 
@@ -236,14 +236,14 @@ const Pr = [
     name: "Srushti Aravandekar",
     role: "Joint Manager",
     description: "Srushti foresees the team’s non-tech aspects, including sponsorships, design, content creation, logistics, and ﬁnance, while contributing to subsystem monitoring as part of the GUI team.",
-    image: `/members/Srushti.jpg`,
+    image: `/members/Srushti.JPG`,
     linkedIn: "https://www.linkedin.com/in/srushtiaravandekar?trk=contact-info",
     id: 1,
   },
   {   
     name: "Shreya Phadtare",
     role: "Marketing Lead",
-    image: "/members/Shreya.jpg",
+    image: "/members/Shreya.JPG",
     description: "",
     id: 6
   },
@@ -251,7 +251,7 @@ const Pr = [
     name: "Harshvardhan Salunke",
     role: "Business Associate",
     description: "Bringing in Sponsors and Managing the All the Non Tech Aspects of the Club.",
-    image: `/members/Harshvardhan.jpg`,
+    image: `/members/Harshvardhan.JPG`,
     linkedIn: "https://www.linkedin.com/in/harshvardhan-salunke-2049b8280?utm_source=share&utm_campaign=share_via&utm_content=proﬁle&utm_medium=android_app",
     id: 2,
   },
@@ -259,14 +259,14 @@ const Pr = [
     name: "Kedar Aware",
     role: "Business Associate",
     description: "Bringing in Sponsors and Managing the All the Non Tech Aspects of the Club.",
-    image: `/members/Kedar.jpg`,
+    image: `/members/Kedar.JPG`,
     linkedIn: "www.linkedin.com/in/kedar-aware",
     id: 3,
   },
   {   
     name: "Kiruba Sehran",
     role: "Manager",
-    image: "/members/Kiruba.jpg",
+    image: "/members/Kiruba.JPG",
     description: "",
     id: 5
   },
@@ -277,7 +277,7 @@ const Sense = [
     name: "Shubham Singh",
     role: "Sense & Control Lead",
     description: "I head the Sense & Control department in Vegapod. Working on the embedded systems in our Hyperloop prototype.",
-    image: "/members/Shubham.jpg",
+    image: "/members/Shubham.JPG",
     linkedIn: "https://www.linkedin.com/in/shubham-singh-285962201?utm_source=share&utm_campaign=share_via&utm_content=proï¬le&utm_medium=android_app",
     id: 1,
   },
@@ -287,7 +287,7 @@ const Sense = [
     subDept: 'Sense',
     role: 'Sense and Control Engineer',
     description: 'Member of the Sense and Control team at Vegapod, contributing to the Hyperloop technology by working with microcontrollers, integrating sensors, and designing PCBs to improve the system',
-    image: '/members/Jahnvi.jpg',
+    image: '/members/Jahnvi.JPG',
     id:6
   },
  
@@ -295,7 +295,7 @@ const Sense = [
     name: "Mansi Gharpende",
     role: "Sense and Control engineer ",
     description: "As a Sense and Control Engineer, I design PCBs, connect sensors, program controllers, and set up communication systems to monitor ",
-    image: "/members/Mansi.jpg",
+    image: "/members/Mansi.JPG",
     linkedIn: "https://www.linkedin.com/in/mansi-gharpende?utm_source=share&utm_campaign=share_via&utm_content=proﬁle&utm_medium=ios_app",
     id: 2,
   },
@@ -305,7 +305,7 @@ const Sense = [
     subDept: 'Sense',
     role: 'Sense and Control Engineer',
     description: 'MVCU and VCU testing',
-    image: '/members/Atharva.jpg',
+    image: '/members/Atharva.JPG',
     id:7
   },
   {
@@ -314,7 +314,7 @@ const Sense = [
     subDept: 'Sense',
     role: 'Sense and Control Engineer',
     description: 'Writing code for VCU',
-    image: '/members/Chaitanya.jpg',
+    image: '/members/Chaitanya.JPG',
     id:4
   },
   {
@@ -332,14 +332,14 @@ const Sense = [
     subDept: 'Sense',
     role: 'Sense and Control Engineer',
     description: 'I design PCBs using KiCAD, Develop and Test Electronic Circuits required for our Hyperloop Prototype',
-    image: '/members/Srujan.jpg',
+    image: '/members/Srujan.JPG',
     id:5
   },
   // {
   //   name: "Abhyudeet Dhawad",
   //   role: "Levitation Engineer",
   //   description: "working on levitation control system and also on electronics",
-  //   image: "/members/Abhyudeet.jpg",
+  //   image: "/members/Abhyudeet.JPG",
   //   linkedIn: "https://www.linkedin.com/in/abhyudeet-dhawad-0520772a6/",
   //   id: 8,
   // },
@@ -347,7 +347,7 @@ const Sense = [
     name: "Swarali",
     role: "Electronics engineer ",
     description: "Designs and implements sensing and control systems for industrial processes.",
-    image: "/members/Swarali.jpg",
+    image: "/members/Swarali.JPG",
     linkedIn: null,
     id: 1,
   },
@@ -357,7 +357,7 @@ const Sense = [
     subDept: 'Electronics',
     role: 'Electronic Engineer',
     description: 'Junior Electronic Engineer at Vegapod Hyperloop, responsible for designing PCBs of different VCUs',
-    image: '/members/Ananthu.jpg',
+    image: '/members/Ananthu.JPG',
     id:9
   },
   {
@@ -366,12 +366,12 @@ const Sense = [
     subDept: 'Electronics',
     role: 'Electronics Engineering',
     description: 'Electronics Engineer',
-    image: '/members/Tanishqa.jpg',
+    image: '/members/Tanishqa.JPG',
     id:10
   },
   {
     name: 'Mandar Nanoty',
-    image: "/members/Mandar.jpg",
+    image: "/members/Mandar.JPG",
     id: 11,
   }
 ]
