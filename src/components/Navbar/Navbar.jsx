@@ -1,25 +1,25 @@
 'use client';
-
 import React from "react";
 import Link from "next/link";
 import vegapodLogo from "@/assets/logo/newVegapodLogo.svg";
 import Image from "next/image";
 import Sidepanel from "./Sidepanel";
 import ButtonDark from "../Button/ButtonDark";
-
+import { usePathname } from "next/navigation";
 
 const Navbar = ({ pages }) => {
-
-  
+  const path = usePathname();
 
   return (
     <>
       <nav
-        className={`flex flex-row-reverse lg:flex-row justify-around lg:justify- h-20 items-center bg-light-100 fixed top-0 inset-x-0  transition-all duration-700 z-50`}
+        className={`flex flex-row-reverse lg:flex-row justify-around lg:justify- h-20 items-center 
+        ${path == "/blog" ? "bg-white" : "bg-light-100"} 
+        fixed top-0 inset-x-0  transition-all duration-700 z-50`}
         id="navbar"
       >
         <div className="flex gap-4 items-center">
-        {/* <Link href={"https://mitwpu.edu.in/"}>
+          {/* <Link href={"https://mitwpu.edu.in/"}>
             <Image
               src={"/mit-wpu_logo.png"}
               alt={"Vegapod Logo"}
@@ -32,16 +32,12 @@ const Navbar = ({ pages }) => {
             <Image
               src={vegapodLogo}
               alt={"Vegapod Logo"}
-              height={250}
-              width={250}
+              height={190}
+              width={190}
             />
-            {/* <div className="h-8 w-[1px] bg-primary-900"/>
-            Vegpod <br />
-            Hyperloop */}
           </Link>
-          
         </div>
-        
+
         <div className="hidden lg:flex gap-8 ">
           {pages.map((page) => {
             return (

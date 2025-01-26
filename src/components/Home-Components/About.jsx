@@ -38,7 +38,7 @@ const About = () => {
           </p>
         </div>
         <div className="mt-16 relative max-w-7xl mx-auto">
-          {/* <DynamicVideo src="/video/vegapod-video.mp4" /> */}
+          <DynamicVideo src="/video/vegapod-video.mp4" />
         </div>
       </section>
 
