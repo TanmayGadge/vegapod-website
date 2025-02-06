@@ -91,7 +91,7 @@ const FacultyCard = () => {
             <Card
               image={"/chetan-patil.jpg"}
               name={"Dr. Chetan Patil"}
-              // website={"https://kakandikar.in/"}
+              website={"#"}
               // role={
               //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis elit condimentum, pharetra tortor quis, faucibus ante. Ut eget purus sagittis lacus tempor lacinia."
               // }
@@ -129,7 +129,7 @@ const Card = ({ image, name, role, website, linkedIn, className }) => {
       <div className="flex gap-6 font-semibold ">
         {website ? (
           <Link
-            href={website}
+            href={website || "#"}
             className="flex  items-center gap-2 text-blue-600"
           >
             <ExternalLink size={18} />
