@@ -53,7 +53,7 @@ const FacultyCard = () => {
                 </Link>
 
                 <Link
-                  href={"https://kakandikar.in/"}
+                  href={"https://www.linkedin.com/in/ganesh-kakandikar-814b3140/?originalSubdomain=in"}
                   className="flex  items-center gap-2 text-blue-600"
                 >
                   <Linkedin size={18} />
@@ -91,7 +91,7 @@ const FacultyCard = () => {
             <Card
               image={"/chetan-patil.jpg"}
               name={"Dr. Chetan Patil"}
-              website={"https://kakandikar.in/"}
+              // website={"https://kakandikar.in/"}
               // role={
               //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis elit condimentum, pharetra tortor quis, faucibus ante. Ut eget purus sagittis lacus tempor lacinia."
               // }
