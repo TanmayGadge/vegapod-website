@@ -91,7 +91,7 @@ const FacultyCard = () => {
             <Card
               image={"/chetan-patil.jpg"}
               name={"Dr. Chetan Patil"}
-              website={"#"}
+              // website={"#"}
               // role={
               //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis elit condimentum, pharetra tortor quis, faucibus ante. Ut eget purus sagittis lacus tempor lacinia."
               // }
@@ -111,7 +111,7 @@ const Card = ({ image, name, role, website, linkedIn, className }) => {
     <div
       className={`p-4 space-y-3 w-fit flex flex-col items-center ${className}`}
     >
-      <Link href={website} target="_blank">
+      <Link href={website || "#"} target="_blank">
         <Image
           src={image}
           className={`rounded-2xl object-cover aspect-[3/4]`}
