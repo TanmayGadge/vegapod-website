@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
     { title: "Achievements", href: "/achievements", id: 4 },
     // { title: "Contact", href: "/contact", id: 5 },
     { title: "Gallery", href: "/gallery", id: 6 },
+    {title: "Mentors", href: "/mentors", id: 7},
     // { title: "Crowd Funding", href: "/crowd-funding", id: 7 },
     { title: "Sponsors", href: "/sponsors", id: 8 },
   ];
@@ -73,45 +74,6 @@ export default function RootLayout({ children }) {
         />
       </Head>
       <body className={`antialiased`}>
-        {/* {renderCont ? (
-          <div className="fixed top-0 h-screen w-screen">
-            {renderCur &&
-             <div className="absolute z-40 top-0 h-screen w-screen flex " onClick={()=>{
-                setIsRevealed(true);
-                setTimeout(()=>{
-                  setRenderCur(false)
-                }, 3000)
-             }}>
-                <div className={`w-1/2  bg-cover h-full  ${isRevealed? "translate-x-[-100%]": ""} transition-transform`} 
-                style={{
-                  transitionDuration: '3000ms',
-                  backgroundImage: "url('/curtain-1.jpeg')",
-                  transitionTimingFunction: cubicBezier(0.95, 0.05, 0.795, 0.035)
-                  
-                  
-                  // transitionDelay:
-                }}
-                >
-
-                </div>
-                <div className={`w-1/2 bg-cover  h-full ${isRevealed? "translate-x-[100%]": ""} transition-transform `} 
-                style={{
-                  transitionDuration: '3000ms',
-                  backgroundImage: "url('/curtain-2.jpeg')",
-                  transitionTimingFunction: cubicBezier(0.95, 0.05, 0.795, 0.035)
-                }}
-                >
-
-                </div>
-              </div>}
-
-            <div className="absolute z-30 h-screen w-screen top-0 bg-red-400" onClick={()=>{
-              setRenderCont(false)              
-            }}>
-              <Mhale />
-            </div>
-          </div>
-        ) : <Navbar pages={pages} />} */}
 
         <Navbar pages={pages} />
         <main className="mt-20 ">{children}</main>

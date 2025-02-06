@@ -37,11 +37,11 @@ const FacultyCard = () => {
               <h1 className="text-2xl  font-bold ">
                 Prof. Dr. Ganesh Kakandikar
               </h1>
-              <p className="font-medium max-w-md text-sm text-black/60">
+              {/* <p className="font-medium max-w-md text-sm text-black/60">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Praesent convallis elit condimentum, pharetra tortor quis,
                 faucibus ante. Ut eget purus sagittis lacus tempor lacinia. "
-              </p>
+              </p> */}
 
               <div className="flex gap-6 font-semibold justify-center md:justify-start">
                 <Link
@@ -81,9 +81,9 @@ const FacultyCard = () => {
               image={"/omkar-kulkarni.jpg"}
               name={"Dr. Omkar Kulkarni"}
               website={"https://sites.google.com/site/omkarkul9/home"}
-              role={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis elit condimentum, pharetra tortor quis, faucibus ante. Ut eget purus sagittis lacus tempor lacinia."
-              }
+              // role={
+              //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis elit condimentum, pharetra tortor quis, faucibus ante. Ut eget purus sagittis lacus tempor lacinia."
+              // }
               linkedIn={
                 "https://www.linkedin.com/in/omkar-kulkarni9/?originalSubdomain=in"
               }
@@ -92,9 +92,9 @@ const FacultyCard = () => {
               image={"/chetan-patil.jpg"}
               name={"Dr. Chetan Patil"}
               website={"https://kakandikar.in/"}
-              role={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis elit condimentum, pharetra tortor quis, faucibus ante. Ut eget purus sagittis lacus tempor lacinia."
-              }
+              // role={
+              //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis elit condimentum, pharetra tortor quis, faucibus ante. Ut eget purus sagittis lacus tempor lacinia."
+              // }
               linkedIn={
                 "https://www.linkedin.com/in/chetan-patil-a82b1558/?originalSubdomain=in"
               }
