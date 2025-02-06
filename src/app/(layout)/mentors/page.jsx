@@ -80,7 +80,7 @@ const FacultyCard = () => {
             <Card
               image={"/omkar-kulkarni.jpg"}
               name={"Dr. Omkar Kulkarni"}
-              website={"https://sites.google.com/site/omkarkul9/home"}
+              website={"https://sites.google.com/view/omkarkulkarni/bio"}
               // role={
               //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis elit condimentum, pharetra tortor quis, faucibus ante. Ut eget purus sagittis lacus tempor lacinia."
               // }
@@ -130,6 +130,7 @@ const Card = ({ image, name, role, website, linkedIn, className }) => {
         {website ? (
           <Link
             href={website || "#"}
+            target="_blank"
             className="flex  items-center gap-2 text-blue-600"
           >
             <ExternalLink size={18} />
