@@ -1,15 +1,12 @@
 "use client";
-import React, { useState} from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-
-
 export const LayoutGrid = ({ cards }) => {
   const [selected, setSelected] = useState(null);
   const [lastSelected, setLastSelected] = useState(null);
-
 
   const handleClick = (card) => {
     setLastSelected(selected);
@@ -20,13 +17,40 @@ export const LayoutGrid = ({ cards }) => {
     setLastSelected(selected);
     setSelected(null);
   };
+  
+  // Add global click event listener
+  useEffect(() => {
+    // Only add the listener if an image is selected
+    if (selected) {
+      const handleGlobalClick = (e) => {
+        // Check if the click is on an image or the content area
+        const galleryImage = document.getElementById("gallery-image");
+        const contentArea = document.querySelector(`[layoutId="content-${selected.id}"]`);
+        
+        
+        
+        handleOutsideClick();
+      };
+      
+      // Add the event listener to the document
+      document.addEventListener("click", handleGlobalClick);
+      
+      // Clean up the event listener when component unmounts or selected changes
+      return () => {
+        document.removeEventListener("click", handleGlobalClick);
+      };
+    }
+  }, [selected]);
 
   return (
-    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4  max-w-7xl mx-auto gap-4 relative ">
+    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 max-w-7xl mx-auto gap-4 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
-            onClick={() => handleClick(card)}
+            onClick={(e) => {
+              e.stopPropagation(); // Prevent event from bubbling up
+              handleClick(card);
+            }}
             className={cn(
               card.className,
               "relative overflow-hidden",
@@ -40,16 +64,18 @@ export const LayoutGrid = ({ cards }) => {
           >
             {selected?.id === card.id && <SelectedCard selected={selected} />}
             
-              <div>
-                <ImageComponent card={card} />
-              </div>
-            
+            <div>
+              <ImageComponent card={card} />
+            </div>
           </motion.div>
         </div>
       ))}
 
       <motion.div
-        onClick={handleOutsideClick}
+        onClick={(e) => {
+          e.stopPropagation(); // Prevent event from bubbling up
+          handleOutsideClick();
+        }}
         className={cn(
           "absolute h-full w-full left-0 top-0 bg-black opacity-0 z-10",
           selected?.id ? "pointer-events-auto" : "pointer-events-none"
@@ -61,14 +87,13 @@ export const LayoutGrid = ({ cards }) => {
 };
 
 const ImageComponent = ({ card }) => {
-
   return (
     <Image
       src={card.thumbnail}
       height={500}
       width={500}
       className={cn(
-        `object-cover object-top absolute inset-0 h-full w-full transition duration-200 cursor-pointer `
+        `object-cover object-top absolute inset-0 h-full w-full transition duration-200 cursor-pointer`
       )}
       id="gallery-image"
       alt="thumbnail"
