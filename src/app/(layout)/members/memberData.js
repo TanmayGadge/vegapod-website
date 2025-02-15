@@ -17,17 +17,10 @@ const Leads = [
     image: "/members/Ashish.JPG",
     linkedIn: "",
     id: 4,
-  },
-  {   
-    name: "Shravani Shinde",
-    role: "Manager",
-    image: "/members/Shravani.JPG",
-    description: "",
-    id: 6
   }, 
   {
     name: "Srushti Aravandekar",
-    role: "Joint Manager",
+    role: "Manager",
     description: "Srushti foresees the team’s non-tech aspects, including sponsorships, design, content creation, logistics, and ﬁnance, while contributing to subsystem monitoring as part of the GUI team.",
     image: `/members/Srushti.JPG`,
     linkedIn: "https://www.linkedin.com/in/srushtiaravandekar?trk=contact-info",
@@ -87,7 +80,7 @@ const GUI = [
   },
   {
     name: "Srushti Aravandekar",
-    role: "Joint Manager",
+    role: "GUI engineer",
     description: "Srushti foresees the team’s non-tech aspects, including sponsorships, design, content creation, logistics, and ﬁnance, while contributing to subsystem monitoring as part of the GUI team.",
     image: `/members/Srushti.JPG`,
     linkedIn: "https://www.linkedin.com/in/srushtiaravandekar?trk=contact-info",
@@ -225,16 +218,9 @@ const cSuite = [
   },
 ];
 const Pr = [
-  {   
-    name: "Shravani Shinde",
-    role: "Manager",
-    image: "/members/Shravani.JPG",
-    description: "",
-    id: 4
-  }, 
   {
     name: "Srushti Aravandekar",
-    role: "Joint Manager",
+    role: "Manager",
     description: "Srushti foresees the team’s non-tech aspects, including sponsorships, design, content creation, logistics, and ﬁnance, while contributing to subsystem monitoring as part of the GUI team.",
     image: `/members/Srushti.JPG`,
     linkedIn: "https://www.linkedin.com/in/srushtiaravandekar?trk=contact-info",
