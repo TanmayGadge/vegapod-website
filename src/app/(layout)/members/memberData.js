@@ -80,7 +80,7 @@ const GUI = [
   },
   {
     name: "Srushti Aravandekar",
-    role: "GUI engineer",
+    role: "GUI Engineer",
     description: "Srushti foresees the team’s non-tech aspects, including sponsorships, design, content creation, logistics, and ﬁnance, while contributing to subsystem monitoring as part of the GUI team.",
     image: `/members/Srushti.JPG`,
     linkedIn: "https://www.linkedin.com/in/srushtiaravandekar?trk=contact-info",
@@ -250,7 +250,7 @@ const Pr = [
     id: 3,
   },
   {   
-    name: "Kiruba Sehran",
+    name: "Kiruba Seharan",
     role: "Manager",
     image: "/members/Kiruba.JPG",
     description: "",
