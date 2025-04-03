@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -7,6 +7,7 @@ import Image from "next/image";
 export const LayoutGrid = ({ cards }) => {
   const [selected, setSelected] = useState(null);
   const [lastSelected, setLastSelected] = useState(null);
+  const containerRef = useRef(null);
 
   const handleClick = (card) => {
     setLastSelected(selected);
@@ -23,9 +24,11 @@ export const LayoutGrid = ({ cards }) => {
     // Only add the listener if an image is selected
     if (selected) {
       const handleGlobalClick = (e) => {
-        // Check if the click is on an image or the content area
-        
-        handleOutsideClick();
+        // Check if the click is outside the image content
+        // Using a safer approach than closest()
+        if (containerRef.current && !containerRef.current.contains(e.target)) {
+          handleOutsideClick();
+        }
       };
       
       // Add the event listener to the document
@@ -48,35 +51,32 @@ export const LayoutGrid = ({ cards }) => {
               handleClick(card);
             }}
             className={cn(
-              card.className,
               "relative overflow-hidden",
               selected?.id === card.id
-                ? "rounded-lg cursor-pointer fixed inset-0 h-3/4 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
+                ? "rounded-lg cursor-pointer fixed inset-0 w-screen h-screen z-50 flex justify-center items-center"
                 : lastSelected?.id === card.id
                 ? "z-40 bg-white rounded-xl h-full w-full"
                 : "bg-white rounded-xl h-full w-full"
             )}
             layoutId={`card-${card.id}`}
+            ref={selected?.id === card.id ? containerRef : null}
           >
-            {selected?.id === card.id && <SelectedCard selected={selected} />}
-            
-            <div>
+            {selected?.id === card.id ? (
+              <SelectedCard selected={selected} onClose={handleOutsideClick} />
+            ) : (
               <ImageComponent card={card} />
-            </div>
+            )}
           </motion.div>
         </div>
       ))}
 
       <motion.div
-        onClick={(e) => {
-          e.stopPropagation(); // Prevent event from bubbling up
-          handleOutsideClick();
-        }}
+        onClick={handleOutsideClick}
         className={cn(
-          "absolute h-full w-full left-0 top-0 bg-black opacity-0 z-10",
+          "fixed inset-0 bg-black opacity-0 z-10",
           selected?.id ? "pointer-events-auto" : "pointer-events-none"
         )}
-        animate={{ opacity: selected?.id ? 0.3 : 0 }}
+        animate={{ opacity: selected?.id ? 0.7 : 0 }}
       />
     </div>
   );
@@ -88,9 +88,7 @@ const ImageComponent = ({ card }) => {
       src={card.thumbnail}
       height={500}
       width={500}
-      className={cn(
-        `object-cover object-top absolute inset-0 h-full w-full transition duration-200 cursor-pointer`
-      )}
+      className="object-contain object-center absolute inset-0 h-full w-full transition duration-200 cursor-pointer"
       id="gallery-image"
       alt="thumbnail"
       layout="fixed"
@@ -99,40 +97,30 @@ const ImageComponent = ({ card }) => {
   );
 };
 
-const SelectedCard = ({ selected }) => {
+const SelectedCard = ({ selected, onClose }) => {
   return (
-    <div className="bg-transparent h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]">
-      <motion.div
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 0,
-        }}
-        className="absolute inset-0 h-full w-full bg-black z-10"
+    <div className="h-full w-full flex items-center justify-center relative z-[60]">
+      <Image
+        src={selected.thumbnail}
+        fill
+        className="object-contain p-4 md:p-8"
+        id="gallery-image"
+        alt="fullscreen image"
+        sizes="100vw"
       />
-      <motion.div
-        layoutId={`content-${selected?.id}`}
-        initial={{
-          opacity: 0,
-          y: 100,
+      
+      <button 
+        className="absolute top-4 right-4 z-[70] bg-black bg-opacity-50 text-white rounded-full p-2 hover:bg-opacity-70 transition-all"
+        onClick={(e) => {
+          e.stopPropagation();
+          onClose();
         }}
-        animate={{
-          opacity: 1,
-          y: 0,
-        }}
-        exit={{
-          opacity: 0,
-          y: 100,
-        }}
-        transition={{
-          duration: 0.3,
-          ease: "easeInOut",
-        }}
-        className="relative px-8 pb-4 z-[70] text-xl bg-custom text-light-100 pt-2"
       >
-        {selected?.content}
-      </motion.div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
     </div>
   );
 };

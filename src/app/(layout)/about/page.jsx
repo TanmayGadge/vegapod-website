@@ -2,14 +2,13 @@ import React from "react";
 import groupImage from "@/assets/images/image-3.jpg";
 import Image from "next/image";
 import { LampDemo } from "@/components/Lamp-Effect/Lamp";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 // import Head from "next/head";
 
-export const metadata = {
-  title: "About",
-  description: "Learn more about the club",
-};
 
-const page = () => {
+const Page = () => {
+
   return (
     <>
       <section className="">
@@ -17,23 +16,23 @@ const page = () => {
       </section>
       <section className="bg-light-100 ">
         <div className="max-w-7xl p-4 mx-auto ">
-          <p className="w-[80%] mt-40 text-left mx-auto text-4xl sm:text-5xl xl:text-7xl  font-bold ">
-            <span className="opacity-[35%]">
+          <p className="w-[80%] mt-40 text-left mx-auto text-4xl sm:text-5xl xl:text-7xl font-bold">
+            <span className="opacity-[35%] inline-block">
               At Vegapod Hyperloop, our vision is{" "}
             </span>
-            <span className="xl:leading-[5rem]">
+            <span className="xl:leading-[5rem] inline-block">
               to revolutionize transportation{" "}
             </span>
-            <span className="opacity-[35%] xl:leading-[5rem]">
+            <span className="opacity-[35%] xl:leading-[5rem] inline-block">
               by developing a sustainable, ultra-fast hyperloop system.
               <br /> <br />
               Our goal is
             </span>{" "}
-            <span className="xl:leading-[5rem]">
+            <span className="xl:leading-[5rem] inline-block">
               to lead in the development of innovative technologies that
               seamlessly connect cities{" "}
             </span>
-            <span className="opacity-[35%]">
+            <span className="opacity-[35%] inline-block">
               and improve mobility while fostering economic growth.
             </span>
           </p>
@@ -48,7 +47,7 @@ const page = () => {
                 <br /> <br /> Our mission is to contribute to the global
                 innovation of hyperloop systems by combining cutting-edge
                 engineering, design, and business strategies. We strive to
-                create a viab le prototype that pushes the boundaries of what is
+                create a viable prototype that pushes the boundaries of what is
                 possible in transportation
               </p>
               <Image
@@ -65,4 +64,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -94,6 +94,14 @@ const GUI = [
     linkedIn: "https://www.linkedin.com/in/tanmay-gadge-377b9625b/",
     id: 3,
   },
+  {
+    name: "Mrunal Marathe",
+    role: "GUI Engineer",
+    description: "Crafts Robust UI for the pod",
+    image: "/members/Mrunal.JPG",
+    linkedIn: "https://www.linkedin.com/in/tanmay-gadge-377b9625b/",
+    id: 3,
+  },
 ];
 
 

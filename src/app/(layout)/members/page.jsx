@@ -20,6 +20,7 @@ import {
 } from "@/app/(layout)/members/memberData";
 
 import Link from "next/link";
+import Heading from "@/components/Heading";
 
 export const metadata = {
   title: "Members",
@@ -41,9 +42,10 @@ const page = () => {
     <section className="bg-light-100 p-4 ">
       <div className="text-center p-4 max-w-7xl mx-auto">
         <h1 className="sm:text-7xl text-5xl p-4 ">
-          <span className="opacity-[50%]">Meet the team that makes  <br /></span> the magic <span className="opacity-[50%]">happen</span>
+          <span className="text-gray-500">Meet the team that makes  <br /></span> the magic <span className=" text-gray-500">happen</span>
         </h1>
-        <h2 className="sm:text-xl opacity-[50%] p-2">
+        {/* <Heading text={["Meet the team that makes", "the magic", "happen"]}/> */}
+        <h2 className="sm:text-xl text-gray-500 p-2">
           Proud members of Vegapod Hyperloop
         </h2>
       </div>

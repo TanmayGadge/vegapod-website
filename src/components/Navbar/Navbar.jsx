@@ -14,7 +14,7 @@ const Navbar = ({ pages }) => {
     <>
       <nav
         className={`flex flex-row-reverse lg:flex-row justify-around lg:justify- h-20 items-center 
-        ${path == "/blog" ? "bg-white" : "bg-light-100"} 
+        bg-light-100 
         fixed top-0 inset-x-0  transition-all duration-700 z-50`}
         id="navbar"
       >

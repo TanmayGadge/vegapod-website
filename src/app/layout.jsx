@@ -25,17 +25,12 @@ export default function RootLayout({ children }) {
     { title: "About", href: "/about", id: 2 },
     { title: "Members", href: "/members", id: 3 },
     { title: "Achievements", href: "/achievements", id: 4 },
-    // { title: "Contact", href: "/contact", id: 5 },
-    { title: "Gallery", href: "/gallery", id: 6 },
-    {title: "Mentors", href: "/mentors", id: 7},
-    // { title: "Crowd Funding", href: "/crowd-funding", id: 7 },
-    { title: "Sponsors", href: "/sponsors", id: 8 },
+    { title: "Gallery", href: "/gallery", id: 5 },
+    {title: "Mentors", href: "/mentors", id: 6},
+    { title: "Sponsors", href: "/sponsors", id: 7 },
+    { title: "News", href: "/news", id: 8 },
+    // { title: "News", href: "/news", id: 8 },
   ];
-  // const [isRevealed, setIsRevealed] = useState(
-  //   localStorage.getItem("mode") === "dev" ? false : true
-  // );
-  // const [renderCur, setRenderCur] = useState(true);
-  // const [renderCont, setRenderCont] = useState(true);
 
   return (
     <html lang="en">

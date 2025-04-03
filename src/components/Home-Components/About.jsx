@@ -8,12 +8,13 @@ const DynamicVideo = dynamic(() => import("../Video/LazyVideo"), {
 });
 
 const About = () => {
+
   return (
     <>
-      <section className=" bg-primary-800 text-light-100  p-4 py-32">
+      <section className="bg-primary-800 text-light-100 p-4 py-32">
         <div className="max-w-7xl font-extralight selection:bg-light-100 selection:text-primary-800 space-y-8 mx-auto">
-          <h2 className="text-5xl h flex items-end">Breaking Barriers</h2>
-          <p className="text-xl sm:text-2xl p-[0.5rem]">
+          <h2  className="text-5xl h flex items-end">Breaking Barriers</h2>
+          <p  className="text-xl sm:text-2xl p-[0.5rem]">
             <span className="float-left text-6xl pr-2">V</span>ision challenges
             conformity. Conformity creates conventions. Conventions build
             barriers that prevent a better future. But when many people who
@@ -23,7 +24,7 @@ const About = () => {
             complications of travel, we are taking the world where it wants to
             go. We're moving the world faster forward. Get on board
           </p>
-          <p className="text-xl sm:text-2xl  text-justify p-[0.5rem]">
+          <p className="text-xl sm:text-2xl text-justify p-[0.5rem]">
             Team Vegapod Hyperloop is a dynamic, student-led initiative
             incubated at MIT-WPU, comprising of{" "}
             <strong className="font-semibold">40 talented students </strong>{" "}
@@ -32,7 +33,7 @@ const About = () => {
               advancing hyperloop technology
             </strong>
             . We craft sub-scale hyperloop prototypes, incorporating
-            cutting-edge technologies such as levitation, , contactless
+            cutting-edge technologies such as levitation, contactless
             propulsion, regenerative braking, power electronics, and cooling
             systems.
           </p>
@@ -41,8 +42,6 @@ const About = () => {
           <DynamicVideo src="/video/vegapod-video.mp4" />
         </div>
       </section>
-
-      
     </>
   );
 };

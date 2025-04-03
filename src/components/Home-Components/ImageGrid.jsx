@@ -14,7 +14,7 @@ const ImageGrid = () => {
   const imgs = [image1, image2, image3, image4, image6, image7];
   return (
     <>
-      <div className="hidden md:grid grid-cols-3 grid-rows-2 gap-2 p-4 ">
+      <div className="hidden md:grid md:w-3/4 grid-cols-3 grid-rows-2 gap-2 p-4 ">
         <Image
           src={image2}
           layout="responsive"

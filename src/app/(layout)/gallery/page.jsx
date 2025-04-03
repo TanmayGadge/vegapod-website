@@ -12,8 +12,8 @@ const page = () => {
   return (
     <>
       <section className="bg-light-100">
-        <h1 className="text-5xl sm:text-9xl text-center p-16 w-fit mx-auto">
-          Gallery of Innovation
+        <h1 className="text-5xl sm:text-7xl text-center p-16 w-fit mx-auto">
+         <span className="text-gray-500">Gallery of</span>  Innovation
         </h1>
 
         <LayoutGrid cards={images} className="" />
