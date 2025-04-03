@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Sponsors",
-  description: "Our sponsors"
-}
+  description: "Our sponsors",
+};
 
 const page = () => {
   const sponsors = [
@@ -107,13 +107,26 @@ const page = () => {
       desc: "",
       level: 2,
     },
+    // {
+    //   name: "ace",
+    //   image: "ace.png",
+    //   url: "https://www.ace-ace.com/com/company/stabilus.html",
+    //   desc: "",
+    // },
+    // {
+    //   name: "Vicharak",
+    //   image: "vicharak.jpeg",
+    //   url: "https://www.vicharak.in",
+    //   desc: "",
+    // },
   ];
 
   return (
     <section className="bg-light-100">
       <div className="max-w-7xl p-4 mx-auto space-y-8">
-        <h1 className="text-5xl w-fit mx-auto p-4">
-          A Heartfelt Thank You to Our Sponsors
+        <h1 className="text-7xl text-center w-fit mx-auto p-4">
+          <span className="text-gray-500">A Heartfelt</span> Thank You{" "}
+          <span className="text-gray-500">to</span> Our Sponsors
         </h1>
         <div className="grid grid-cols-2 gap-4">
           <SponsorCard
